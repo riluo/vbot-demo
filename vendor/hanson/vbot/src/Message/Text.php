@@ -64,6 +64,8 @@ class Text extends Message implements MessageInterface
             return false;
         }
 
+        $this->saveLog($word,vbot('myself')->username,$username);
+
         return static::sendMsg([
             'Type'         => 1,
             'Content'      => $word,
@@ -73,4 +75,13 @@ class Text extends Message implements MessageInterface
             'ClientMsgId'  => time() * 1e4,
         ]);
     }
+
+    private function saveLog($Content,$FromUserName,$ToUserName)
+    {
+        $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
+
+        $pdo->exec("insert into dialog(`Type`,FromUserName,ToUserName,Content,CreateTime) values('1','".$FromUserName."','".$ToUserName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
+    }
+
+
 }

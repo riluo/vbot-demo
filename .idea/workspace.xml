@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/send.php" afterPath="$PROJECT_DIR$/send.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="send.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6017699" vertical-offset="552" max-vertical-offset="1230">
+            <state vertical-scroll-proportion="-16.375" vertical-offset="552" max-vertical-offset="1230">
               <caret line="63" column="81" selection-start-line="63" selection-start-column="81" selection-end-line="63" selection-end-column="81" />
               <folding>
                 <marker date="1507802263000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
@@ -42,12 +42,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendAble.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Traits/SendAble.php">
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.041667" vertical-offset="11" max-vertical-offset="750">
-              <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
-              <folding />
+            <state vertical-scroll-proportion="0.40265486" vertical-offset="657" max-vertical-offset="1335">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <marker date="1507804700000" expanded="true" signature="1882:2049" placeholder="insert into ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +71,7 @@
       <file leaf-file-name="Myself.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0833335" vertical-offset="394" max-vertical-offset="1185">
+            <state vertical-scroll-proportion="-7.3333335" vertical-offset="364" max-vertical-offset="1185">
               <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
               <folding>
                 <marker date="1507797188000" expanded="true" signature="865:913" placeholder="SELECT count..." />
@@ -105,8 +107,8 @@
       <file leaf-file-name="Server.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="3330" max-vertical-offset="5700">
-              <caret line="257" column="91" selection-start-line="257" selection-start-column="91" selection-end-line="257" selection-end-column="91" />
+            <state vertical-scroll-proportion="-14.375" vertical-offset="3330" max-vertical-offset="5700">
+              <caret line="256" column="0" selection-start-line="256" selection-start-column="0" selection-end-line="265" selection-end-column="9" />
               <folding>
                 <marker date="1507797177000" expanded="true" signature="7879:7927" placeholder="SELECT count..." />
                 <marker date="1507797177000" expanded="true" signature="7879:7928" placeholder="SELECT count..." />
@@ -118,23 +120,6 @@
                 <marker date="1507797177000" expanded="true" signature="8077:8314" placeholder="UPDATE confi..." />
                 <marker date="1507797177000" expanded="true" signature="8077:8315" placeholder="UPDATE confi..." />
                 <marker date="1507797177000" expanded="true" signature="8359:8654" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbtest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbtest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="16" column="200" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="200" />
-              <folding>
-                <marker date="1507795505000" expanded="true" signature="144:404" placeholder="insert into ..." />
-                <marker date="1507795505000" expanded="true" signature="486:522" placeholder="SELECT count..." />
-                <marker date="1507795505000" expanded="true" signature="486:522" placeholder="SELECT count..." />
-                <marker date="1507795505000" expanded="true" signature="643:754" placeholder="UPDATE confi..." />
-                <marker date="1507795505000" expanded="true" signature="643:754" placeholder="UPDATE confi..." />
-                <marker date="1507795505000" expanded="true" signature="802:985" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -156,6 +141,7 @@
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
         <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/send.php" />
+        <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
       </list>
     </option>
   </component>
@@ -267,6 +253,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hanson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,7 +428,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -520,14 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/ContactFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.875" vertical-offset="1360" max-vertical-offset="2040">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Friends.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.4166665" vertical-offset="1706" max-vertical-offset="2565">
@@ -549,12 +557,12 @@
         <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="420">
           <caret line="16" column="200" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="200" />
           <folding>
-            <marker date="1507795505000" expanded="true" signature="144:404" placeholder="insert into ..." />
-            <marker date="1507795505000" expanded="true" signature="486:522" placeholder="SELECT count..." />
-            <marker date="1507795505000" expanded="true" signature="486:522" placeholder="SELECT count..." />
-            <marker date="1507795505000" expanded="true" signature="643:754" placeholder="UPDATE confi..." />
-            <marker date="1507795505000" expanded="true" signature="643:754" placeholder="UPDATE confi..." />
-            <marker date="1507795505000" expanded="true" signature="802:985" placeholder="insert into ..." />
+            <marker date="1507795505000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1507795505000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1507795505000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1507795505000" expanded="true" signature="-1:-1" placeholder="UPDATE confi..." />
+            <marker date="1507795505000" expanded="true" signature="-1:-1" placeholder="UPDATE confi..." />
+            <marker date="1507795505000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -568,44 +576,6 @@
             <marker date="1507796766000" expanded="true" signature="2091:2208" placeholder="SELECT count..." />
             <marker date="1507796766000" expanded="true" signature="2373:2546" placeholder="UPDATE frien..." />
             <marker date="1507796766000" expanded="true" signature="2607:2855" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="3330" max-vertical-offset="5700">
-          <caret line="257" column="91" selection-start-line="257" selection-start-column="91" selection-end-line="257" selection-end-column="91" />
-          <folding>
-            <marker date="1507797177000" expanded="true" signature="7879:7927" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7928" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8293" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8295" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8312" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8314" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8315" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8359:8654" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0833335" vertical-offset="394" max-vertical-offset="1185">
-          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
-          <folding>
-            <marker date="1507797188000" expanded="true" signature="865:913" placeholder="SELECT count..." />
-            <marker date="1507797188000" expanded="true" signature="865:914" placeholder="SELECT count..." />
-            <marker date="1507797188000" expanded="true" signature="865:926" placeholder="SELECT count..." />
-            <marker date="1507797188000" expanded="true" signature="865:926" placeholder="SELECT count..." />
-            <marker date="1507797188000" expanded="true" signature="865:927" placeholder="SELECT count..db..." />
-            <marker date="1507797188000" expanded="true" signature="1059:1119" placeholder="UPDATE confi..." />
-            <marker date="1507797188000" expanded="true" signature="1059:1121" placeholder="UPDATE confi..." />
-            <marker date="1507797188000" expanded="true" signature="1059:1136" placeholder="UPDATE confi..." />
-            <marker date="1507797188000" expanded="true" signature="1059:1137" placeholder="UPDATE confi..." />
-            <marker date="1507797188000" expanded="true" signature="1066:1119" placeholder="SELECT count..config..." />
           </folding>
         </state>
       </provider>
@@ -646,14 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71753985" vertical-offset="600" max-vertical-offset="1155">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.117647" vertical-offset="1305" max-vertical-offset="2565">
@@ -664,23 +626,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Traits/SendAble.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.041667" vertical-offset="11" max-vertical-offset="750">
-          <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6017699" vertical-offset="552" max-vertical-offset="1230">
+        <state vertical-scroll-proportion="-16.375" vertical-offset="552" max-vertical-offset="1230">
           <caret line="63" column="81" selection-start-line="63" selection-start-column="81" selection-end-line="63" selection-end-column="81" />
           <folding>
             <marker date="1507802263000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
             <marker date="1507802263000" expanded="true" signature="1129:1166" placeholder="select * fro..friends..." />
             <marker date="1507802263000" expanded="true" signature="1129:1172" placeholder="select * fro..friends..." />
             <marker date="1507802263000" expanded="true" signature="1129:1174" placeholder="SELECT * FRO..friends..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/MessageFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21681416" vertical-offset="147" max-vertical-offset="1485">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/ContactFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.84513277" vertical-offset="1338" max-vertical-offset="2040">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/MessageHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3000">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Traits/SendAble.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42625368" vertical-offset="11" max-vertical-offset="750">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335" vertical-offset="364" max-vertical-offset="1185">
+          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+          <folding>
+            <marker date="1507797188000" expanded="true" signature="865:913" placeholder="SELECT count..." />
+            <marker date="1507797188000" expanded="true" signature="865:914" placeholder="SELECT count..." />
+            <marker date="1507797188000" expanded="true" signature="865:926" placeholder="SELECT count..." />
+            <marker date="1507797188000" expanded="true" signature="865:926" placeholder="SELECT count..." />
+            <marker date="1507797188000" expanded="true" signature="865:927" placeholder="SELECT count..db..." />
+            <marker date="1507797188000" expanded="true" signature="1059:1119" placeholder="UPDATE confi..." />
+            <marker date="1507797188000" expanded="true" signature="1059:1121" placeholder="UPDATE confi..." />
+            <marker date="1507797188000" expanded="true" signature="1059:1136" placeholder="UPDATE confi..." />
+            <marker date="1507797188000" expanded="true" signature="1059:1137" placeholder="UPDATE confi..." />
+            <marker date="1507797188000" expanded="true" signature="1066:1119" placeholder="SELECT count..config..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375" vertical-offset="3330" max-vertical-offset="5700">
+          <caret line="256" column="0" selection-start-line="256" selection-start-column="0" selection-end-line="265" selection-end-column="9" />
+          <folding>
+            <marker date="1507797177000" expanded="true" signature="7879:7927" placeholder="SELECT count..." />
+            <marker date="1507797177000" expanded="true" signature="7879:7928" placeholder="SELECT count..." />
+            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
+            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
+            <marker date="1507797177000" expanded="true" signature="8077:8293" placeholder="UPDATE confi..." />
+            <marker date="1507797177000" expanded="true" signature="8077:8295" placeholder="UPDATE confi..." />
+            <marker date="1507797177000" expanded="true" signature="8077:8312" placeholder="UPDATE confi..." />
+            <marker date="1507797177000" expanded="true" signature="8077:8314" placeholder="UPDATE confi..." />
+            <marker date="1507797177000" expanded="true" signature="8077:8315" placeholder="UPDATE confi..." />
+            <marker date="1507797177000" expanded="true" signature="8359:8654" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40265486" vertical-offset="657" max-vertical-offset="1335">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <marker date="1507804700000" expanded="true" signature="1882:2049" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
