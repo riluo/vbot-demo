@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.php" afterPath="$PROJECT_DIR$/run.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/send.php" afterPath="$PROJECT_DIR$/send.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="send.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="send.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.833333" vertical-offset="130" max-vertical-offset="825">
-              <caret line="26" column="70" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="70" />
-              <folding />
+            <state vertical-scroll-proportion="-0.084070794" vertical-offset="447" max-vertical-offset="1170">
+              <caret line="26" column="69" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="69" />
+              <folding>
+                <marker date="1507799084000" expanded="true" signature="754:799" placeholder="SELECT * FRO..config..." />
+                <marker date="1507799084000" expanded="true" signature="1050:1087" placeholder="select * fro..friends..." />
+                <marker date="1507799084000" expanded="true" signature="1050:1093" placeholder="select * fro..friends..." />
+                <marker date="1507799084000" expanded="true" signature="1050:1095" placeholder="SELECT * FRO..friends..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44852942" vertical-offset="850" max-vertical-offset="1545">
-              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+            <state vertical-scroll-proportion="-10.208333" vertical-offset="850" max-vertical-offset="1545">
+              <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="77" />
               <folding>
                 <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
                 <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
@@ -135,12 +140,12 @@
       <list>
         <option value="$PROJECT_DIR$/phpinfo.php" />
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
-        <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/dbtest.php" />
         <option value="$PROJECT_DIR$/serve.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
         <option value="$PROJECT_DIR$/run.php" />
+        <option value="$PROJECT_DIR$/send.php" />
       </list>
     </option>
   </component>
@@ -591,22 +596,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.833333" vertical-offset="130" max-vertical-offset="825">
-          <caret line="26" column="70" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44852942" vertical-offset="850" max-vertical-offset="1545">
-          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        <state vertical-scroll-proportion="-10.208333" vertical-offset="850" max-vertical-offset="1545">
+          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="77" />
           <folding>
             <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
             <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
             <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.084070794" vertical-offset="447" max-vertical-offset="1170">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <marker date="1507799084000" expanded="true" signature="754:799" placeholder="SELECT * FRO..config..." />
+            <marker date="1507799084000" expanded="true" signature="1050:1087" placeholder="select * fro..friends..." />
+            <marker date="1507799084000" expanded="true" signature="1050:1093" placeholder="select * fro..friends..." />
+            <marker date="1507799084000" expanded="true" signature="1050:1095" placeholder="SELECT * FRO..friends..." />
           </folding>
         </state>
       </provider>
