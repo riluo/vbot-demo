@@ -66,7 +66,10 @@ $arr = array(
         "LocalID"=>time() * 1e4,
         "ClientMsgId"=>time() * 1e4
     ));
-
+$content =  Content::formatContent("你好");
+$data = json_encode($content, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+echo $data;
+exit;
 
 $jsonStr = json_encode($arr);
 list($returnCode, $returnContent) = http_post_json($url, $jsonStr);
