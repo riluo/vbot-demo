@@ -246,6 +246,14 @@ class Server
             'DeviceID' => $this->vbot->config['server.deviceId'],
         ];
 
+        $this->vbot->console->log('begin print needed parameter');
+        $this->vbot->console->log('current Uin: '.$data['exuin']);
+        $this->vbot->console->log('current Sid: '.$data['wxsid']);
+        $this->vbot->console->log('current Skey: '.$data['skey']);
+        $this->vbot->console->log('current pass_ticket: '.$data['pass_ticket']);
+        $this->vbot->console->log('current DeviceID: '.$this->vbot->config['server.deviceId']);
+        $this->vbot->console->log('End');
+
         $this->saveServer();
     }
 
