@@ -65,7 +65,7 @@ $options = [
 ];
 $vbot = new Hanson\Vbot\Foundation\Vbot($options);
 $vbot->messageHandler->setHandler(function ($message) {
-    Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'testing...!');
+    //Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'testing...!');
 });
 // 获取监听器实例
 $observer = $vbot->observer;
