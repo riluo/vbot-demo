@@ -262,7 +262,7 @@ class Server
         if($rows["count"]>0) {
             $pdo->exec("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = ",$data['wxuin']);
         } else {
-            $pdo->exec("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."'','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+            $pdo->exec("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
         }
 
 
