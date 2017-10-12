@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/send.php" afterPath="$PROJECT_DIR$/send.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,36 +31,24 @@
       <file leaf-file-name="send.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38496584" vertical-offset="761" max-vertical-offset="1200">
-              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.33628318" vertical-offset="537" max-vertical-offset="1215">
+              <caret line="51" column="97" selection-start-line="51" selection-start-column="97" selection-end-line="51" selection-end-column="97" />
               <folding>
-                <marker date="1507800813000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
-                <marker date="1507800813000" expanded="true" signature="1129:1166" placeholder="select * fro..friends..." />
-                <marker date="1507800813000" expanded="true" signature="1129:1172" placeholder="select * fro..friends..." />
-                <marker date="1507800813000" expanded="true" signature="1129:1174" placeholder="SELECT * FRO..friends..." />
+                <marker date="1507801861000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
+                <marker date="1507801861000" expanded="true" signature="1129:1166" placeholder="select * fro..friends..." />
+                <marker date="1507801861000" expanded="true" signature="1129:1172" placeholder="select * fro..friends..." />
+                <marker date="1507801861000" expanded="true" signature="1129:1174" placeholder="SELECT * FRO..friends..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
+      <file leaf-file-name="SendAble.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Traits/SendAble.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1155">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state vertical-scroll-proportion="-12.041667" vertical-offset="11" max-vertical-offset="750">
+              <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Message.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.470588" vertical-offset="1185" max-vertical-offset="2565">
-              <caret line="106" column="48" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="48" />
-              <folding>
-                <element signature="e#122#140#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -385,7 +374,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -638,14 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1155">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1545">
@@ -666,25 +647,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71753985" vertical-offset="600" max-vertical-offset="1155">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.470588" vertical-offset="1185" max-vertical-offset="2565">
-          <caret line="106" column="48" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="48" />
+        <state vertical-scroll-proportion="-4.117647" vertical-offset="1305" max-vertical-offset="2565">
+          <caret line="106" column="40" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
           <folding>
             <element signature="e#122#140#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Traits/SendAble.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.041667" vertical-offset="11" max-vertical-offset="750">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38496584" vertical-offset="761" max-vertical-offset="1200">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.33628318" vertical-offset="537" max-vertical-offset="1215">
+          <caret line="51" column="97" selection-start-line="51" selection-start-column="97" selection-end-line="51" selection-end-column="97" />
           <folding>
-            <marker date="1507800813000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
-            <marker date="1507800813000" expanded="true" signature="1129:1166" placeholder="select * fro..friends..." />
-            <marker date="1507800813000" expanded="true" signature="1129:1172" placeholder="select * fro..friends..." />
-            <marker date="1507800813000" expanded="true" signature="1129:1174" placeholder="SELECT * FRO..friends..." />
+            <marker date="1507801861000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
+            <marker date="1507801861000" expanded="true" signature="1129:1166" placeholder="select * fro..friends..." />
+            <marker date="1507801861000" expanded="true" signature="1129:1172" placeholder="select * fro..friends..." />
+            <marker date="1507801861000" expanded="true" signature="1129:1174" placeholder="SELECT * FRO..friends..." />
           </folding>
         </state>
       </provider>
