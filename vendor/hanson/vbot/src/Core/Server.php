@@ -254,7 +254,7 @@ class Server
         $this->vbot->console->log('current DeviceID: '.$this->vbot->config['server.deviceId']);
         $this->vbot->console->log('End');
 
-        $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
+        $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
         $q = $pdo->query("SELECT count(*) from config where Uin = ",$this->uin);
         $rows = $q->fetch();
         if($rows[0]>0) {

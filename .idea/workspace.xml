@@ -4,8 +4,6 @@
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.php" afterPath="$PROJECT_DIR$/run.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serve.php" afterPath="$PROJECT_DIR$/serve.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,16 +55,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Myself.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Myself.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8272727" vertical-offset="221" max-vertical-offset="1155">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state vertical-scroll-proportion="-11.25" vertical-offset="255" max-vertical-offset="1155">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
-                <marker date="1507792764000" expanded="true" signature="864:903" placeholder="SELECT count..config..." />
-                <marker date="1507792764000" expanded="true" signature="864:917" placeholder="SELECT count..db..." />
-                <marker date="1507792764000" expanded="true" signature="997:1057" placeholder="UPDATE confi..." />
-                <marker date="1507792764000" expanded="true" signature="1004:1057" placeholder="SELECT count..config..." />
+                <marker date="1507793476000" expanded="true" signature="865:904" placeholder="SELECT count..config..." />
+                <marker date="1507793476000" expanded="true" signature="865:918" placeholder="SELECT count..db..." />
+                <marker date="1507793476000" expanded="true" signature="998:1058" placeholder="UPDATE confi..." />
+                <marker date="1507793476000" expanded="true" signature="1005:1058" placeholder="SELECT count..config..." />
               </folding>
             </state>
           </provider>
@@ -84,15 +82,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Server.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.083333" vertical-offset="3469" max-vertical-offset="5670">
-              <caret line="260" column="225" selection-start-line="260" selection-start-column="225" selection-end-line="260" selection-end-column="225" />
+            <state vertical-scroll-proportion="0.5022727" vertical-offset="3469" max-vertical-offset="5670">
+              <caret line="256" column="20" selection-start-line="256" selection-start-column="20" selection-end-line="256" selection-end-column="20" />
               <folding>
-                <marker date="1507792952000" expanded="true" signature="7878:7917" placeholder="SELECT count..config..." />
-                <marker date="1507792952000" expanded="true" signature="8011:8227" placeholder="UPDATE confi..." />
-                <marker date="1507792952000" expanded="true" signature="8288:8581" placeholder="insert into ..." />
+                <marker date="1507793483000" expanded="true" signature="7879:7918" placeholder="SELECT count..config..." />
+                <marker date="1507793483000" expanded="true" signature="8012:8228" placeholder="UPDATE confi..." />
+                <marker date="1507793483000" expanded="true" signature="8289:8582" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -415,9 +413,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4185" max-vertical-offset="5415">
           <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
           <folding>
-            <marker date="1507792952000" expanded="true" signature="7878:7917" placeholder="SELECT count..config..." />
-            <marker date="1507792952000" expanded="true" signature="8011:8227" placeholder="UPDATE confi..." />
-            <marker date="1507792952000" expanded="true" signature="8288:8581" placeholder="insert into ..." />
+            <marker date="1507793483000" expanded="true" signature="7879:7918" placeholder="SELECT count..config..." />
+            <marker date="1507793483000" expanded="true" signature="8012:8228" placeholder="UPDATE confi..." />
+            <marker date="1507793483000" expanded="true" signature="8289:8582" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -526,27 +524,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.083333" vertical-offset="3469" max-vertical-offset="5670">
-          <caret line="260" column="225" selection-start-line="260" selection-start-column="225" selection-end-line="260" selection-end-column="225" />
+        <state vertical-scroll-proportion="-11.25" vertical-offset="255" max-vertical-offset="1155">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding>
-            <marker date="1507792952000" expanded="true" signature="7878:7917" placeholder="SELECT count..config..." />
-            <marker date="1507792952000" expanded="true" signature="8011:8227" placeholder="UPDATE confi..." />
-            <marker date="1507792952000" expanded="true" signature="8288:8581" placeholder="insert into ..." />
+            <marker date="1507793476000" expanded="true" signature="865:904" placeholder="SELECT count..config..." />
+            <marker date="1507793476000" expanded="true" signature="865:918" placeholder="SELECT count..db..." />
+            <marker date="1507793476000" expanded="true" signature="998:1058" placeholder="UPDATE confi..." />
+            <marker date="1507793476000" expanded="true" signature="1005:1058" placeholder="SELECT count..config..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8272727" vertical-offset="221" max-vertical-offset="1155">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.5022727" vertical-offset="3469" max-vertical-offset="5670">
+          <caret line="256" column="20" selection-start-line="256" selection-start-column="20" selection-end-line="256" selection-end-column="20" />
           <folding>
-            <marker date="1507792764000" expanded="true" signature="864:903" placeholder="SELECT count..config..." />
-            <marker date="1507792764000" expanded="true" signature="864:917" placeholder="SELECT count..db..." />
-            <marker date="1507792764000" expanded="true" signature="997:1057" placeholder="UPDATE confi..." />
-            <marker date="1507792764000" expanded="true" signature="1004:1057" placeholder="SELECT count..config..." />
+            <marker date="1507793483000" expanded="true" signature="7879:7918" placeholder="SELECT count..config..." />
+            <marker date="1507793483000" expanded="true" signature="8012:8228" placeholder="UPDATE confi..." />
+            <marker date="1507793483000" expanded="true" signature="8289:8582" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
