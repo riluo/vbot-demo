@@ -255,9 +255,10 @@ class Server
         $this->vbot->console->log('End');
 
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
-        $q = $pdo->query("SELECT count(*) from config where Uin = ",$data['wxuin']);
+        $pdo->setFetchMode(PDO::FETCH_ASSOC);
+        $q = $pdo->query("SELECT count(*) as count from config where Uin = ",$data['wxuin']);
         $rows = $q->fetch();
-        if($rows[0]>0) {
+        if($rows["count"]>0) {
             $pdo->exec("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = ",$data['wxuin']);
         } else {
             $pdo->exec("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."'','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
