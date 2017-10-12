@@ -71,6 +71,13 @@ $vbot->messageHandler->setHandler(function ($message) {
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
     //print_r($contacts['friends']);
+    foreach($contacts as $k => $v) {
+        if($k == 'friends'){
+           foreach($v as $vv){
+               var_dump($vv);
+           }
+        };
+    }
     //print_r($contacts['groups']);
     // ...
 });
