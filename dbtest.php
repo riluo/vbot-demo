@@ -5,6 +5,9 @@
     echo "插入成功！";
     echo $pdo -> lastinsertid();
     }*/
+
+$pdo->exec("insert into dialog(`Type`,FromUserName,ToUserName,Content,CreateTime) values('1','aaaaa','bbbb','cccccc','".date("Y-m-d H:i:s",time())."')");
+eixt;
 $q = $pdo->query("SELECT count(*) as count from config");
 $q->setFetchMode(\PDO::FETCH_ASSOC);
 
