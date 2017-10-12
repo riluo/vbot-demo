@@ -5,6 +5,9 @@
  * Date: 17/10/12
  * Time: 上午11:42
  */
+require_once __DIR__.'/vendor/autoload.php';
+use Hanson\Vbot\Support\Content;
+
 function http_post_json($url, $jsonStr)
 {
     $ch = curl_init();
@@ -57,7 +60,7 @@ $arr = array(
     ),
     "Msg" => array(
         "Type"=>1,
-        "Content"=>"你好",
+        "Content"=>Content::formatContent("你好"),
         "FromUserName"=>$username,
         "ToUserName"=> $ToUserName,//NickName:撸货买买买
         "LocalID"=>time() * 1e4,
