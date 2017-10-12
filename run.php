@@ -66,14 +66,16 @@ $options = [
 $vbot = new Hanson\Vbot\Foundation\Vbot($options);
 $vbot->messageHandler->setHandler(function ($message) {
     //Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'testing...!');
-    var_dump($message['raw']);
+    Hanson\Vbot\Message\Text::saveLog($message['from']['UserName'], $message['raw']['content']);
 });
 
+//[UserName] => @e7cbf8d294f878933e18062923ca1b99
+//[NickName] => 撸货买买买
 
 // 获取监听器实例
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
-    print_r($contacts['friends']);
+    //print_r($contacts['friends']);
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     foreach($contacts as $k => $v) {
         if($k == 'friends'){

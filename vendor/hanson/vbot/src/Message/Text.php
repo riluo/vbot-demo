@@ -76,8 +76,9 @@ class Text extends Message implements MessageInterface
         ]);
     }
 
-    private static function saveLog($Content,$FromUserName,$ToUserName)
+    public static function saveLog($ToUserName, $Content)
     {
+        $FromUserName = vbot('myself')->username;
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
 
         $pdo->exec("insert into dialog(`Type`,FromUserName,ToUserName,Content,CreateTime) values('1','".$FromUserName."','".$ToUserName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
