@@ -49,8 +49,8 @@ while($row = $sth->fetch()){
 
 $db = null;
 
-$content =  Content::formatContent("Hello friend, I send this info by python code. 你好, 我现在在给你发送信息");
-$data = json_encode($content, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+#$content =  Content::formatContent("Hello friend, I send this info by python code. 你好, 我现在在给你发送信息");
+#$data = json_encode("Hello friend, I send this info by python code. 你好, 我现在在给你发送信息", JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 $url = "https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?pass_ticket=".$pass_ticket;
 $arr = array(
     "BaseRequest" => array(
@@ -61,7 +61,7 @@ $arr = array(
     ),
     "Msg" => array(
         "Type"=>1,
-        "Content"=>$data,
+        "Content"=>"Hello friend, I send this info by python code. 你好, 我现在在给你发送信息",
         "FromUserName"=>$username,
         "ToUserName"=> $ToUserName,//NickName:撸货买买买
         "LocalID"=>time() * 1e4,
@@ -69,7 +69,7 @@ $arr = array(
     ));
 
 
-$jsonStr = json_encode($arr);
+$jsonStr = json_encode($arr,JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 list($returnCode, $returnContent) = http_post_json($url, $jsonStr);
 var_dump($returnContent);
 var_dump($returnCode);
