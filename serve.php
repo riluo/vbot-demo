@@ -76,6 +76,7 @@ $observer->setFetchContactObserver(function(array $contacts){
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
             foreach($v as $vv){
+                echo "SELECT count(*) as count from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'";
                 $q = $pdo->query("SELECT count(*) as count from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
                 $q->setFetchMode(PDO::FETCH_ASSOC);
 
