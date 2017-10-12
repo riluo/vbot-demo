@@ -64,7 +64,7 @@ class Text extends Message implements MessageInterface
             return false;
         }
 
-        $this->saveLog($word,vbot('myself')->username,$username);
+        self::saveLog($word,vbot('myself')->username,$username);
 
         return static::sendMsg([
             'Type'         => 1,
@@ -76,7 +76,7 @@ class Text extends Message implements MessageInterface
         ]);
     }
 
-    private function saveLog($Content,$FromUserName,$ToUserName)
+    private static function saveLog($Content,$FromUserName,$ToUserName)
     {
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
 

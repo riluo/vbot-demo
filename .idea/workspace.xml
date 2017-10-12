@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbtest.php" afterPath="$PROJECT_DIR$/dbtest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,22 +42,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.75" vertical-offset="657" max-vertical-offset="1335">
-              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="190" />
+            <state vertical-scroll-proportion="0.6681416" vertical-offset="612" max-vertical-offset="1335">
+              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
-                <marker date="1507804700000" expanded="true" signature="1882:2049" placeholder="insert into ..." />
+                <marker date="1507805735000" expanded="true" signature="1888:2055" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbtest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbtest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbtest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22123894" vertical-offset="0" max-vertical-offset="678">
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="480">
               <caret line="8" column="115" selection-start-line="8" selection-start-column="115" selection-end-line="8" selection-end-column="115" />
               <folding>
                 <marker date="1507804965000" expanded="true" signature="481:619" placeholder="insert into ..." />
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
         <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/send.php" />
-        <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
         <option value="$PROJECT_DIR$/dbtest.php" />
+        <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
       </list>
     </option>
   </component>
@@ -709,25 +709,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.75" vertical-offset="657" max-vertical-offset="1335">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="190" />
-          <folding>
-            <marker date="1507804700000" expanded="true" signature="1882:2049" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbtest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22123894" vertical-offset="0" max-vertical-offset="678">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="480">
           <caret line="8" column="115" selection-start-line="8" selection-start-column="115" selection-end-line="8" selection-end-column="115" />
           <folding>
             <marker date="1507804965000" expanded="true" signature="481:619" placeholder="insert into ..." />
             <marker date="1507804965000" expanded="true" signature="647:683" placeholder="SELECT count..." />
             <marker date="1507804965000" expanded="true" signature="804:915" placeholder="UPDATE confi..." />
             <marker date="1507804965000" expanded="true" signature="963:1146" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6681416" vertical-offset="612" max-vertical-offset="1335">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <marker date="1507805735000" expanded="true" signature="1888:2055" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
