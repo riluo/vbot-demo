@@ -40,13 +40,12 @@
       <file leaf-file-name="run.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7132353" vertical-offset="895" max-vertical-offset="1605">
-              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.44852942" vertical-offset="850" max-vertical-offset="1545">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
               <folding>
-                <marker date="1507797375000" expanded="true" signature="1933:2050" placeholder="SELECT count..." />
-                <marker date="1507797375000" expanded="true" signature="2089:2206" placeholder="SELECT count..." />
-                <marker date="1507797375000" expanded="true" signature="2369:2542" placeholder="UPDATE frien..." />
-                <marker date="1507797375000" expanded="true" signature="2601:2849" placeholder="insert into ..." />
+                <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
+                <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
+                <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -463,10 +462,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1260">
           <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
-            <marker date="1507797375000" expanded="true" signature="1933:2050" placeholder="SELECT count..." />
-            <marker date="1507797375000" expanded="true" signature="2089:2206" placeholder="SELECT count..." />
-            <marker date="1507797375000" expanded="true" signature="2369:2542" placeholder="UPDATE frien..." />
-            <marker date="1507797375000" expanded="true" signature="2601:2849" placeholder="insert into ..." />
+            <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
+            <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
+            <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -603,13 +601,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7132353" vertical-offset="895" max-vertical-offset="1605">
-          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.44852942" vertical-offset="850" max-vertical-offset="1545">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding>
-            <marker date="1507797375000" expanded="true" signature="1933:2050" placeholder="SELECT count..." />
-            <marker date="1507797375000" expanded="true" signature="2089:2206" placeholder="SELECT count..." />
-            <marker date="1507797375000" expanded="true" signature="2369:2542" placeholder="UPDATE frien..." />
-            <marker date="1507797375000" expanded="true" signature="2601:2849" placeholder="insert into ..." />
+            <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
+            <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
+            <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

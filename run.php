@@ -75,17 +75,14 @@ $observer->setFetchContactObserver(function(array $contacts){
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
            foreach($v as $vv){
-               echo "SELECT count(*) as count from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'";
+               $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
+               $stmt->execute();
 
-               /*$q = $pdo->query("SELECT count(*) as count from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
-               //$q->setFetchMode(PDO::FETCH_ASSOC);
-
-               $rows = $q->fetch();
-               if($rows["count"]>0) {
+               if($stmt->rowCount()>0) {
                    $pdo->exec("UPDATE friends set UserName='".$vv["UserName"]."',UpdateTime='".date("Y-m-d H:i:s",time())."' where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
                } else {
                    $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
-               }*/
+               }
            }
         };
     }
