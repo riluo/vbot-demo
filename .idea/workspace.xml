@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.php" afterPath="$PROJECT_DIR$/run.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6681416" vertical-offset="612" max-vertical-offset="1335">
+            <state vertical-scroll-proportion="-43.25" vertical-offset="27" max-vertical-offset="1335">
               <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <marker date="1507805735000" expanded="true" signature="1888:2055" placeholder="insert into ..." />
@@ -69,15 +69,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1545">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.5132743" vertical-offset="702" max-vertical-offset="1620">
+              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding>
-                <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
-                <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
-                <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
+                <marker date="1507807168000" expanded="true" signature="2051:2152" placeholder="SELECT * fro..friends..." />
+                <marker date="1507807168000" expanded="true" signature="2262:2435" placeholder="UPDATE frien..." />
+                <marker date="1507807168000" expanded="true" signature="2494:2742" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -153,10 +153,10 @@
         <option value="$PROJECT_DIR$/serve.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
-        <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/dbtest.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
+        <option value="$PROJECT_DIR$/run.php" />
       </list>
     </option>
   </component>
@@ -268,36 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vbot-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vbot-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,9 +482,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1260">
           <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
-            <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
-            <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
-            <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
+            <marker date="1507807168000" expanded="true" signature="2051:2152" placeholder="SELECT * fro..friends..." />
+            <marker date="1507807168000" expanded="true" signature="2262:2435" placeholder="UPDATE frien..." />
+            <marker date="1507807168000" expanded="true" signature="2494:2742" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -593,18 +563,6 @@
         <state vertical-scroll-proportion="0.17084283" vertical-offset="0" max-vertical-offset="439">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1545">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="44" />
-          <folding>
-            <marker date="1507797693000" expanded="true" signature="1948:2049" placeholder="SELECT * fro..friends..." />
-            <marker date="1507797693000" expanded="true" signature="2159:2332" placeholder="UPDATE frien..." />
-            <marker date="1507797693000" expanded="true" signature="2391:2639" placeholder="insert into ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,10 +682,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6681416" vertical-offset="612" max-vertical-offset="1335">
+        <state vertical-scroll-proportion="-43.25" vertical-offset="27" max-vertical-offset="1335">
           <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding>
             <marker date="1507805735000" expanded="true" signature="1888:2055" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5132743" vertical-offset="702" max-vertical-offset="1620">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <marker date="1507807168000" expanded="true" signature="2051:2152" placeholder="SELECT * fro..friends..." />
+            <marker date="1507807168000" expanded="true" signature="2262:2435" placeholder="UPDATE frien..." />
+            <marker date="1507807168000" expanded="true" signature="2494:2742" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
