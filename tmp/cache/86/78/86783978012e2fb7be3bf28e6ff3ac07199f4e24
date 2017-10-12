@@ -1,0 +1,13 @@
+1507692427a:11:{s:3:"raw";a:27:{s:5:"MsgId";s:19:"2199631176126781398";s:12:"FromUserName";s:33:"@579ddddaef17b92809722fadcf61a2c9";s:10:"ToUserName";s:33:"@4bda5d0bf4d5fc3078df8ed20039dcdf";s:7:"MsgType";i:1;s:7:"Content";s:209:"阿里妹收到你的消息啦('◡')ﾉ 谢谢你的支持！<br/><br/>回复“手册”，免费下载《阿里Java开发手册》最新完美版。<br/><br/>文章转载联系：lunalin.lpp@alibaba-inc.com";s:6:"Status";i:3;s:9:"ImgStatus";i:1;s:10:"CreateTime";i:1507692305;s:11:"VoiceLength";i:0;s:10:"PlayLength";i:0;s:8:"FileName";s:0:"";s:8:"FileSize";s:0:"";s:7:"MediaId";s:0:"";s:3:"Url";s:0:"";s:10:"AppMsgType";i:0;s:16:"StatusNotifyCode";i:0;s:20:"StatusNotifyUserName";s:0:"";s:13:"RecommendInfo";a:14:{s:8:"UserName";s:0:"";s:8:"NickName";s:0:"";s:5:"QQNum";i:0;s:8:"Province";s:0:"";s:4:"City";s:0:"";s:7:"Content";s:0:"";s:9:"Signature";s:0:"";s:5:"Alias";s:0:"";s:5:"Scene";i:0;s:10:"VerifyFlag";i:0;s:10:"AttrStatus";i:0;s:3:"Sex";i:0;s:6:"Ticket";s:0:"";s:6:"OpCode";i:0;}s:11:"ForwardFlag";i:0;s:7:"AppInfo";a:2:{s:5:"AppID";s:0:"";s:4:"Type";i:0;}s:12:"HasProductId";i:0;s:6:"Ticket";s:0:"";s:9:"ImgHeight";i:0;s:8:"ImgWidth";i:0;s:10:"SubMsgType";i:0;s:8:"NewMsgId";i:2199631176126781398;s:10:"OriContent";s:0:"";}s:4:"from";a:31:{s:3:"Uin";i:0;s:8:"UserName";s:33:"@579ddddaef17b92809722fadcf61a2c9";s:8:"NickName";s:12:"阿里技术";s:10:"HeadImgUrl";s:144:"/cgi-bin/mmwebwx-bin/webwxgeticon?seq=670383200&username=@579ddddaef17b92809722fadcf61a2c9&skey=@crypt_9086bef5_08abb4fa346fac3cff4e2071dc13cb15";s:11:"ContactFlag";i:3;s:11:"MemberCount";i:0;s:10:"MemberList";a:0:{}s:10:"RemarkName";s:0:"";s:16:"HideInputBarFlag";i:0;s:3:"Sex";i:0;s:9:"Signature";s:75:"阿里巴巴官方技术号，关于阿里的技术创新均将呈现于此";s:10:"VerifyFlag";i:24;s:8:"OwnerUin";i:0;s:9:"PYInitial";s:4:"ALJS";s:9:"PYQuanPin";s:8:"alijishu";s:15:"RemarkPYInitial";s:0:"";s:15:"RemarkPYQuanPin";s:0:"";s:10:"StarFriend";i:0;s:14:"AppAccountFlag";i:0;s:7:"Statues";i:0;s:10:"AttrStatus";i:0;s:8:"Province";s:6:"浙江";s:4:"City";s:6:"杭州";s:5:"Alias";s:0:"";s:7:"SnsFlag";i:0;s:9:"UniFriend";i:0;s:11:"DisplayName";s:0:"";s:10:"ChatRoomId";i:0;s:7:"KeyWord";s:3:"gh_";s:15:"EncryChatRoomId";s:0:"";s:7:"IsOwner";i:0;}s:8:"fromType";s:8:"Official";s:6:"sender";N;s:7:"message";s:193:"阿里妹收到你的消息啦('◡')ﾉ 谢谢你的支持！
+
+回复“手册”，免费下载《阿里Java开发手册》最新完美版。
+
+文章转载联系：lunalin.lpp@alibaba-inc.com";s:4:"time";O:13:"Carbon\Carbon":3:{s:4:"date";s:26:"2017-10-11 11:25:05.000000";s:13:"timezone_type";i:3;s:8:"timezone";s:13:"Asia/Shanghai";}s:8:"username";s:33:"@579ddddaef17b92809722fadcf61a2c9";s:7:"content";s:193:"阿里妹收到你的消息啦('◡')ﾉ 谢谢你的支持！
+
+回复“手册”，免费下载《阿里Java开发手册》最新完美版。
+
+文章转载联系：lunalin.lpp@alibaba-inc.com";s:4:"type";s:4:"text";s:4:"isAt";b:0;s:4:"pure";s:193:"阿里妹收到你的消息啦('◡')ﾉ 谢谢你的支持！
+
+回复“手册”，免费下载《阿里Java开发手册》最新完美版。
+
+文章转载联系：lunalin.lpp@alibaba-inc.com";}
