@@ -45,7 +45,12 @@ while($row = $sth->fetch()){
 }
 
 $db = null;
-echo $ToUserName;exit;
+echo $Sid;
+echo $Skey;
+echo $DeviceID;
+echo $pass_ticket;
+echo $username;
+exit;
 
 $url = "https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?pass_ticket=HrUrk%2FeApO65%2FMgJMiUDhQwl0i6U31yhu8kDCdBT1bodWgAnwLBxBdyfUtE8hv6y";
 $arr = array(
@@ -59,7 +64,7 @@ $arr = array(
         "Type"=>1,
         "Content"=>"你好",
         "FromUserName"=>"e6bab46111a78e25f58cc3fa0d2e2514",
-        "ToUserName"=> "@05b39bfcf8f576d2112cbaa623856ae3",//NickName:撸货买买买
+        "ToUserName"=> $ToUserName,//NickName:撸货买买买
         "LocalID"=>time() * 1e4,
         "ClientMsgId"=>time() * 1e4
     ));
