@@ -66,6 +66,7 @@ $options = [
 $vbot = new Hanson\Vbot\Foundation\Vbot($options);
 $vbot->messageHandler->setHandler(function ($message) {
     //Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'testing...!');
+    var_dump($message['raw']);
     Hanson\Vbot\Message\Text::saveLog($message['from']['UserName'], $message['raw']['content']);
 });
 
