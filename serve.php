@@ -76,7 +76,7 @@ $observer->setFetchContactObserver(function(array $contacts){
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
             foreach($v as $vv){
-                $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['UserName']."','".$vv['UserName']."','".$vv['UserName']."',time(),time())");
+                $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['UserName']."','".$vv['UserName']."','".$vv['UserName']."','".time()."','".time()."')");
             }
         };
     }
