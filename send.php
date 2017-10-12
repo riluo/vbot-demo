@@ -24,7 +24,8 @@ function http_post_json($url, $jsonStr)
     return array($httpCode, $response);
 }
 
-$db = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
+$db = new PDO("mysql:host=localhost;dbname=sd_chat","root","
+");
 //查询数据
 $sql = "SELECT * FROM config order by id desc limit 1";
 $sth = $db->query($sql);
@@ -45,6 +46,8 @@ while($row = $sth->fetch()){
 }
 
 $db = null;
+
+echo $ToUserName;exit;
 
 
 $url = "https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?pass_ticket=HrUrk%2FeApO65%2FMgJMiUDhQwl0i6U31yhu8kDCdBT1bodWgAnwLBxBdyfUtE8hv6y";
