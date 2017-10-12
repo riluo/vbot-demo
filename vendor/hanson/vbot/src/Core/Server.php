@@ -255,7 +255,7 @@ class Server
         $this->vbot->console->log('End');
 
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
-        $q = $pdo->query("SELECT count(*) from config where Uin = ",$this->uin);
+        $q = $pdo->query("SELECT count(*) from config where Uin = ",$data['wxuin']);
         $rows = $q->fetch();
         if($rows[0]>0) {
             $pdo->exec("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = ",$data['wxuin']);
