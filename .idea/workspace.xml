@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.php" afterPath="$PROJECT_DIR$/run.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serve.php" afterPath="$PROJECT_DIR$/serve.php" />
     </list>
@@ -40,15 +38,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5588235" vertical-offset="895" max-vertical-offset="1575">
-              <caret line="83" column="205" selection-start-line="83" selection-start-column="205" selection-end-line="83" selection-end-column="205" />
+            <state vertical-scroll-proportion="-11.458333" vertical-offset="895" max-vertical-offset="1575">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="86" selection-end-column="16" />
               <folding>
-                <marker date="1507796421000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
-                <marker date="1507796421000" expanded="true" signature="2225:2398" placeholder="UPDATE frien..." />
-                <marker date="1507796421000" expanded="true" signature="2457:2705" placeholder="insert into ..." />
+                <marker date="1507796575000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
+                <marker date="1507796575000" expanded="true" signature="2224:2397" placeholder="UPDATE frien..." />
+                <marker date="1507796575000" expanded="true" signature="2456:2704" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -75,19 +73,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serve.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="serve.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.833333" vertical-offset="910" max-vertical-offset="1635">
-              <caret line="86" column="17" selection-start-line="78" selection-start-column="16" selection-end-line="86" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.8897059" vertical-offset="745" max-vertical-offset="1620">
+              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
               <folding>
-                <marker date="1507796279000" expanded="true" signature="1949:2005" placeholder="SELECT count..." />
-                <marker date="1507796279000" expanded="true" signature="1949:2044" placeholder="SELECT count..." />
-                <marker date="1507796279000" expanded="true" signature="1949:2045" placeholder="SELECT count..." />
-                <marker date="1507796279000" expanded="true" signature="1949:2066" placeholder="SELECT count..." />
-                <marker date="1507796279000" expanded="true" signature="1949:2067" placeholder="SELECT count..." />
-                <marker date="1507796279000" expanded="true" signature="2232:2469" placeholder="UPDATE confi..." />
-                <marker date="1507796279000" expanded="true" signature="2530:2778" placeholder="insert into ..." />
+                <marker date="1507796625000" expanded="true" signature="1949:2066" placeholder="SELECT count..." />
+                <marker date="1507796625000" expanded="true" signature="2231:2404" placeholder="UPDATE frien..." />
+                <marker date="1507796625000" expanded="true" signature="2465:2713" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -145,8 +139,8 @@
         <option value="$PROJECT_DIR$/dbtest.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
-        <option value="$PROJECT_DIR$/serve.php" />
         <option value="$PROJECT_DIR$/run.php" />
+        <option value="$PROJECT_DIR$/serve.php" />
       </list>
     </option>
   </component>
@@ -468,9 +462,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1260">
           <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
-            <marker date="1507796421000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
-            <marker date="1507796421000" expanded="true" signature="2225:2398" placeholder="UPDATE frien..." />
-            <marker date="1507796421000" expanded="true" signature="2457:2705" placeholder="insert into ..." />
+            <marker date="1507796575000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
+            <marker date="1507796575000" expanded="true" signature="2224:2397" placeholder="UPDATE frien..." />
+            <marker date="1507796575000" expanded="true" signature="2456:2704" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -592,30 +586,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serve.php">
+    <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.833333" vertical-offset="910" max-vertical-offset="1635">
-          <caret line="86" column="17" selection-start-line="78" selection-start-column="16" selection-end-line="86" selection-end-column="17" />
+        <state vertical-scroll-proportion="-11.458333" vertical-offset="895" max-vertical-offset="1575">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="86" selection-end-column="16" />
           <folding>
-            <marker date="1507796279000" expanded="true" signature="1949:2005" placeholder="SELECT count..." />
-            <marker date="1507796279000" expanded="true" signature="1949:2044" placeholder="SELECT count..." />
-            <marker date="1507796279000" expanded="true" signature="1949:2045" placeholder="SELECT count..." />
-            <marker date="1507796279000" expanded="true" signature="1949:2066" placeholder="SELECT count..." />
-            <marker date="1507796279000" expanded="true" signature="1949:2067" placeholder="SELECT count..." />
-            <marker date="1507796279000" expanded="true" signature="2232:2469" placeholder="UPDATE confi..." />
-            <marker date="1507796279000" expanded="true" signature="2530:2778" placeholder="insert into ..." />
+            <marker date="1507796575000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
+            <marker date="1507796575000" expanded="true" signature="2224:2397" placeholder="UPDATE frien..." />
+            <marker date="1507796575000" expanded="true" signature="2456:2704" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.php">
+    <entry file="file://$PROJECT_DIR$/serve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5588235" vertical-offset="895" max-vertical-offset="1575">
-          <caret line="83" column="205" selection-start-line="83" selection-start-column="205" selection-end-line="83" selection-end-column="205" />
+        <state vertical-scroll-proportion="0.8897059" vertical-offset="745" max-vertical-offset="1620">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
           <folding>
-            <marker date="1507796421000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
-            <marker date="1507796421000" expanded="true" signature="2225:2398" placeholder="UPDATE frien..." />
-            <marker date="1507796421000" expanded="true" signature="2457:2705" placeholder="insert into ..." />
+            <marker date="1507796625000" expanded="true" signature="1949:2066" placeholder="SELECT count..." />
+            <marker date="1507796625000" expanded="true" signature="2231:2404" placeholder="UPDATE frien..." />
+            <marker date="1507796625000" expanded="true" signature="2465:2713" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

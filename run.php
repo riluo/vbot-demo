@@ -77,7 +77,7 @@ $observer->setFetchContactObserver(function(array $contacts){
            foreach($v as $vv){
 
                $q = $pdo->query("SELECT count(*) as count from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
-               $q->setFetchMode(\PDO::FETCH_ASSOC);
+               $q->setFetchMode(PDO::FETCH_ASSOC);
 
                $rows = $q->fetch();
                if($rows["count"]>0) {
