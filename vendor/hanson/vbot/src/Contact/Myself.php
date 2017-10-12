@@ -35,7 +35,7 @@ class Myself
         vbot('console')->log('current user\'s uin:'.$this->uin);
 
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
-        $q = $pdo->query("SELECT count(*) as count from config where Uin = '".$this->uin."'");
+        $q = $pdo->query("SELECT count(*) as count from config where Uin = ".$this->uin);
         $q->setFetchMode(\PDO::FETCH_ASSOC);
 
         $rows = $q->fetch();
