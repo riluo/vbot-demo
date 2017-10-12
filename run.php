@@ -70,7 +70,7 @@ $vbot->messageHandler->setHandler(function ($message) {
 // 获取监听器实例
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
-    print_r($contacts['friends']);
+    //print_r($contacts['friends']);
     //print_r($contacts['groups']);
     // ...
 });
