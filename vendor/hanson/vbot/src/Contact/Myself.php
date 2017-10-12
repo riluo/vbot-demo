@@ -33,6 +33,13 @@ class Myself
         vbot('console')->log('current user\'s nickname:'.$this->nickname);
         vbot('console')->log('current user\'s username:'.$this->username);
         vbot('console')->log('current user\'s uin:'.$this->uin);
+
+        $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
+        $q = $pdo->query("SELECT count(*) from config where Uin = ",$this->uin);
+        $rows = $q->fetch();
+        if($rows[0]>0) {
+            $pdo->exec("UPDATE config set username='".$this->username."' where Uin = ",$this->uin);
+        }
     }
 
     private function setPath()
