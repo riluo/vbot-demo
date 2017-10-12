@@ -30,13 +30,13 @@
       <file leaf-file-name="send.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53097343" vertical-offset="375" max-vertical-offset="1215">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.6902655" vertical-offset="237" max-vertical-offset="1170">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding>
-                <marker date="1507799233000" expanded="true" signature="746:791" placeholder="SELECT * FRO..config..." />
-                <marker date="1507799233000" expanded="true" signature="1042:1079" placeholder="select * fro..friends..." />
-                <marker date="1507799233000" expanded="true" signature="1042:1085" placeholder="select * fro..friends..." />
-                <marker date="1507799233000" expanded="true" signature="1042:1087" placeholder="SELECT * FRO..friends..." />
+                <marker date="1507799300000" expanded="true" signature="754:799" placeholder="SELECT * FRO..config..." />
+                <marker date="1507799300000" expanded="true" signature="1050:1087" placeholder="select * fro..friends..." />
+                <marker date="1507799300000" expanded="true" signature="1050:1093" placeholder="select * fro..friends..." />
+                <marker date="1507799300000" expanded="true" signature="1050:1095" placeholder="SELECT * FRO..friends..." />
               </folding>
             </state>
           </provider>
@@ -610,13 +610,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53097343" vertical-offset="375" max-vertical-offset="1215">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6902655" vertical-offset="237" max-vertical-offset="1170">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding>
-            <marker date="1507799233000" expanded="true" signature="746:791" placeholder="SELECT * FRO..config..." />
-            <marker date="1507799233000" expanded="true" signature="1042:1079" placeholder="select * fro..friends..." />
-            <marker date="1507799233000" expanded="true" signature="1042:1085" placeholder="select * fro..friends..." />
-            <marker date="1507799233000" expanded="true" signature="1042:1087" placeholder="SELECT * FRO..friends..." />
+            <marker date="1507799300000" expanded="true" signature="754:799" placeholder="SELECT * FRO..config..." />
+            <marker date="1507799300000" expanded="true" signature="1050:1087" placeholder="select * fro..friends..." />
+            <marker date="1507799300000" expanded="true" signature="1050:1093" placeholder="select * fro..friends..." />
+            <marker date="1507799300000" expanded="true" signature="1050:1095" placeholder="SELECT * FRO..friends..." />
           </folding>
         </state>
       </provider>
