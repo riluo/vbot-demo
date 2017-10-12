@@ -76,7 +76,15 @@ $observer->setFetchContactObserver(function(array $contacts){
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
             foreach($v as $vv){
-                $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+                $q = $pdo->query("SELECT count(*) as count from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
+                $q->setFetchMode(\PDO::FETCH_ASSOC);
+
+                $rows = $q->fetch();
+                if($rows["count"]>0) {
+                    $pdo->exec("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = '".$data['wxuin']."'");
+                } else {
+                    $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+                }
             }
         };
     }
