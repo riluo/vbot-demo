@@ -256,6 +256,7 @@ class Server
 
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
         $q = $pdo->query("SELECT count(*) as count from config where Uin = ".$data['wxuin']);
+        $q->setFetchMode(\PDO::FETCH_ASSOC);
 
         $rows = $q->fetch();
         if($rows["count"]>0) {
