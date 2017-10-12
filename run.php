@@ -71,10 +71,12 @@ $vbot->messageHandler->setHandler(function ($message) {
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
     //print_r($contacts['friends']);
+    $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
            foreach($v as $vv){
-               var_dump($vv);
+               var_dump($vv["UserName"]);
+               $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['UserName']."','".$vv['UserName']."','".$vv['UserName']."',time(),time())");
            }
         };
     }

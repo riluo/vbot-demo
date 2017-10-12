@@ -68,6 +68,23 @@ $vbot->messageHandler->setHandler(function ($message) {
     Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'Hi, I\'m Vbot!');
 });
 
+// 获取监听器实例
+$observer = $vbot->observer;
+$observer->setFetchContactObserver(function(array $contacts){
+    $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
+    //print_r($contacts['friends']);
+    foreach($contacts as $k => $v) {
+        if($k == 'friends'){
+            foreach($v as $vv){
+                $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['UserName']."','".$vv['UserName']."','".$vv['UserName']."',time(),time())");
+            }
+        };
+    }
+    //print_r($contacts['groups']);
+    // ...
+});
+
+
 $vbot->server->webServe($argv[1]);
 ?>
 

@@ -44,3 +44,5 @@ $arr = array(
 
 $jsonStr = json_encode($arr);
 list($returnCode, $returnContent) = http_post_json($url, $jsonStr);
+var_dump($returnContent);
+var_dump($returnCode);
