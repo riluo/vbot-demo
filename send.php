@@ -45,25 +45,20 @@ while($row = $sth->fetch()){
 }
 
 $db = null;
-echo $Sid;
-echo $Skey;
-echo $DeviceID;
-echo $pass_ticket;
-echo $username;
-exit;
 
-$url = "https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?pass_ticket=HrUrk%2FeApO65%2FMgJMiUDhQwl0i6U31yhu8kDCdBT1bodWgAnwLBxBdyfUtE8hv6y";
+
+$url = "https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?pass_ticket=".$pass_ticket;
 $arr = array(
     "BaseRequest" => array(
-        "Uin" => 2973034280,
-        "Sid" => "tSMxQ+bRslzpBZCm",
-        "Skey"=> "@crypt_9086bef5_84ec22fb157e533927f19bcaba38bdcf",
-        "DeviceID"=> "e703688801141976"
+        "Uin" => $Uin,
+        "Sid" => $Sid,
+        "Skey"=> $Skey,
+        "DeviceID"=> $DeviceID
     ),
     "Msg" => array(
         "Type"=>1,
         "Content"=>"你好",
-        "FromUserName"=>"e6bab46111a78e25f58cc3fa0d2e2514",
+        "FromUserName"=>$username,
         "ToUserName"=> $ToUserName,//NickName:撸货买买买
         "LocalID"=>time() * 1e4,
         "ClientMsgId"=>time() * 1e4
