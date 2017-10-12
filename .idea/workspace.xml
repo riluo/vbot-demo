@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.php" afterPath="$PROJECT_DIR$/run.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,12 +40,13 @@
       <file leaf-file-name="run.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40441176" vertical-offset="895" max-vertical-offset="1575">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="86" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7132353" vertical-offset="895" max-vertical-offset="1605">
+              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
               <folding>
-                <marker date="1507796575000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
-                <marker date="1507796575000" expanded="true" signature="2224:2397" placeholder="UPDATE frien..." />
-                <marker date="1507796575000" expanded="true" signature="2456:2704" placeholder="insert into ..." />
+                <marker date="1507797375000" expanded="true" signature="1933:2050" placeholder="SELECT count..." />
+                <marker date="1507797375000" expanded="true" signature="2089:2206" placeholder="SELECT count..." />
+                <marker date="1507797375000" expanded="true" signature="2369:2542" placeholder="UPDATE frien..." />
+                <marker date="1507797375000" expanded="true" signature="2601:2849" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -138,10 +138,10 @@
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
         <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/dbtest.php" />
-        <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/serve.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
+        <option value="$PROJECT_DIR$/run.php" />
       </list>
     </option>
   </component>
@@ -463,9 +463,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1260">
           <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
-            <marker date="1507796575000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
-            <marker date="1507796575000" expanded="true" signature="2224:2397" placeholder="UPDATE frien..." />
-            <marker date="1507796575000" expanded="true" signature="2456:2704" placeholder="insert into ..." />
+            <marker date="1507797375000" expanded="true" signature="1933:2050" placeholder="SELECT count..." />
+            <marker date="1507797375000" expanded="true" signature="2089:2206" placeholder="SELECT count..." />
+            <marker date="1507797375000" expanded="true" signature="2369:2542" placeholder="UPDATE frien..." />
+            <marker date="1507797375000" expanded="true" signature="2601:2849" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -602,12 +603,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40441176" vertical-offset="895" max-vertical-offset="1575">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="86" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7132353" vertical-offset="895" max-vertical-offset="1605">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
           <folding>
-            <marker date="1507796575000" expanded="true" signature="1946:2063" placeholder="SELECT count..." />
-            <marker date="1507796575000" expanded="true" signature="2224:2397" placeholder="UPDATE frien..." />
-            <marker date="1507796575000" expanded="true" signature="2456:2704" placeholder="insert into ..." />
+            <marker date="1507797375000" expanded="true" signature="1933:2050" placeholder="SELECT count..." />
+            <marker date="1507797375000" expanded="true" signature="2089:2206" placeholder="SELECT count..." />
+            <marker date="1507797375000" expanded="true" signature="2369:2542" placeholder="UPDATE frien..." />
+            <marker date="1507797375000" expanded="true" signature="2601:2849" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
