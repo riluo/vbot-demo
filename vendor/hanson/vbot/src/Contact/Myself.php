@@ -40,7 +40,7 @@ class Myself
 
         $rows = $q->fetch();
         if($rows["count"]>0) {
-            $pdo->exec("UPDATE config set username='".$this->username."' where Uin = ",$this->uin);
+            $pdo->exec("UPDATE config set username='".$this->username."' where Uin = '".$this->uin."'");
         }
     }
 
