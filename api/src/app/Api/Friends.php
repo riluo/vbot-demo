@@ -8,6 +8,7 @@
 namespace App\Api;
 
 use PhalApi\Api;
+use App\Model\Friends as model_friends;
 
 class Friends extends Api {
 
@@ -21,5 +22,10 @@ class Friends extends Api {
 
     public function login() {
         return array('username' => $this->username);
+    }
+
+    public function lists() {
+        $model = new model_friends();
+        return $model->get(100);
     }
 }
