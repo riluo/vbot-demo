@@ -16,7 +16,7 @@ class Dialog extends Api {
     public function getRules() {
         return array(
             'lists' => array(
-                'nickname' => array('name' => 'nickname'),
+                'nickname' => array('name' => 'nickname', 'source' => 'get', 'require' => true),
             ),
         );
     }
