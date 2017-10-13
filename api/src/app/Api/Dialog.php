@@ -27,8 +27,10 @@ class Dialog extends Api {
 
         $selfName = $config_config['nickname'];
 
+        $request_info = new PhalApi_Request($_GET);
+
 
         $model = new model_dialog();
-        return $model->lists()->where(array('FromNickName = ?' => $selfName, 'ToNickName = ?' => $this->nickname))->or(array('ToNickName > =' => $selfName, 'FromNickName = ?' => $this->nickname))->order('CreateTime DESC')->fetchAll();
+        return $model->lists()->where(array('FromNickName = ?' => $selfName, 'ToNickName = ?' => $request_info['nickname']))->or(array('ToNickName > =' => $selfName, 'FromNickName = ?' => $request_info['nickname']))->order('CreateTime DESC')->fetchAll();
     }
 }
