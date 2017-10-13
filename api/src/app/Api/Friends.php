@@ -26,6 +26,6 @@ class Friends extends Api {
 
     public function lists() {
         $model = new model_friends();
-        return $model->get(100);
+        return $model->fetchAll();
     }
 }
