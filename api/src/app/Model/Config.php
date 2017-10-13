@@ -10,4 +10,8 @@ namespace App\Model;
 use PhalApi\Model\NotORMModel as NotORM;
 
 class Config extends NotORM {
+    public function lists() {
+        $configs = $this->getORM();
+        return $configs;
+    }
 }

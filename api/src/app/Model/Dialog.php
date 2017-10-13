@@ -10,4 +10,8 @@ namespace App\Model;
 use PhalApi\Model\NotORMModel as NotORM;
 
 class Dialog extends NotORM {
+    public function lists() {
+        $dialogs = $this->getORM();
+        return $dialogs;
+    }
 }

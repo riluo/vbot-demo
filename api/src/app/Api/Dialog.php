@@ -23,12 +23,12 @@ class Dialog extends Api {
 
     public function lists() {
         $config_model = new model_config();
-        $config_config = $config_model->get(1)->order('id DESC');
+        $config_config = $config_model->lists()->order('id DESC')->fetch();
 
         $selfName = $config_config['nickname'];
 
 
         $model = new model_dialog();
-        return $model->where(array('FromNickName = ?' => $selfName, 'ToNickName = ?' => $this->nickname))->or(array('ToNickName > =' => $selfName, 'FromNickName = ?' => $this->nickname))->order('CreateTime DESC')->fetchAll();
+        return $model->lists()->where(array('FromNickName = ?' => $selfName, 'ToNickName = ?' => $this->nickname))->or(array('ToNickName > =' => $selfName, 'FromNickName = ?' => $this->nickname))->order('CreateTime DESC')->fetchAll();
     }
 }
