@@ -65,7 +65,8 @@ $options = [
 ];
 $vbot = new Hanson\Vbot\Foundation\Vbot($options);
 $vbot->messageHandler->setHandler(function ($message) {
-    Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'Hi, I\'m Vbot!');
+    //Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'Hi, I\'m Vbot!');
+    Hanson\Vbot\Message\Text::saveLog($message['from']['UserName'], $message['from']['NickName'], $message['raw']['Content']);
 });
 
 // 获取监听器实例
