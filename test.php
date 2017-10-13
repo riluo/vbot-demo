@@ -92,7 +92,7 @@ $code = new QRcode();$code::png($url, "./img/".$imgName.".png", 'H', 4, 2);
 <p align="center"><img src="./img/<?php echo $imgName;?>.png" style="margin-top:10px;" /></p>
 <?php
 $cmd = "/usr/local/php/bin/php /data/wwwroot/default/vbot/serve.php $uuid";
-pclose(popen($cmd.' > /dev/null &', 'r'));
+pclose(popen($cmd.' > /tmp/vbot.log &', 'r'));
 #system("/usr/local/php/bin/php /data/wwwroot/default/vbot/serve.php $uuid");
 /*exec("/usr/local/php/bin/php /data/wwwroot/default/vbot/serve.php $uuid", $output, $result);
 if($result > 0)
