@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="" />
+    <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.php" afterPath="$PROJECT_DIR$/run.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serve.php" afterPath="$PROJECT_DIR$/serve.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,79 +29,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="send.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/send.php">
+      <file leaf-file-name="Dialog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7699115" vertical-offset="0" max-vertical-offset="1350">
-              <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+            <state vertical-scroll-proportion="-34.375" vertical-offset="450" max-vertical-offset="1770">
+              <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
               <folding>
-                <marker date="1507860016000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
-                <marker date="1507860016000" expanded="true" signature="1163:1200" placeholder="select * fro..friends..." />
-                <marker date="1507860016000" expanded="true" signature="1163:1206" placeholder="select * fro..friends..." />
-                <marker date="1507860016000" expanded="true" signature="1163:1208" placeholder="SELECT * FRO..friends..." />
-                <marker date="1507860016000" expanded="true" signature="2366:2587" placeholder="insert into ..." />
+                <element signature="e#112#128#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.375" vertical-offset="672" max-vertical-offset="1380">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="252" />
-              <folding>
-                <marker date="1507859098000" expanded="true" signature="1987:2216" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbtest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbtest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="8" column="115" selection-start-line="8" selection-start-column="115" selection-end-line="8" selection-end-column="115" />
-              <folding>
-                <marker date="1507804965000" expanded="true" signature="481:619" placeholder="insert into ..." />
-                <marker date="1507804965000" expanded="true" signature="647:683" placeholder="SELECT count..." />
-                <marker date="1507804965000" expanded="true" signature="804:915" placeholder="UPDATE confi..." />
-                <marker date="1507804965000" expanded="true" signature="963:1146" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.25" vertical-offset="837" max-vertical-offset="1650">
-              <caret line="69" column="90" selection-start-line="69" selection-start-column="90" selection-end-line="69" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.71794873" vertical-offset="990" max-vertical-offset="1665">
+              <caret line="90" column="233" selection-start-line="90" selection-start-column="233" selection-end-line="90" selection-end-column="233" />
               <folding>
-                <marker date="1507858821000" expanded="true" signature="2182:2283" placeholder="SELECT * fro..friends..." />
-                <marker date="1507858821000" expanded="true" signature="2393:2566" placeholder="UPDATE frien..." />
-                <marker date="1507858821000" expanded="true" signature="2625:2873" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Myself.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.208333" vertical-offset="304" max-vertical-offset="1200">
-              <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
-              <folding>
-                <marker date="1507859415000" expanded="true" signature="865:913" placeholder="SELECT count..." />
-                <marker date="1507859415000" expanded="true" signature="865:914" placeholder="SELECT count..." />
-                <marker date="1507859415000" expanded="true" signature="865:926" placeholder="SELECT count..." />
-                <marker date="1507859415000" expanded="true" signature="865:926" placeholder="SELECT count..." />
-                <marker date="1507859415000" expanded="true" signature="865:927" placeholder="SELECT count..db..." />
-                <marker date="1507859415000" expanded="true" signature="1059:1150" placeholder="UPDATE confi..." />
-                <marker date="1507859415000" expanded="true" signature="1059:1152" placeholder="UPDATE confi..." />
-                <marker date="1507859415000" expanded="true" signature="1059:1167" placeholder="UPDATE confi..." />
-                <marker date="1507859415000" expanded="true" signature="1059:1168" placeholder="UPDATE confi..." />
-                <marker date="1507859415000" expanded="true" signature="1066:1150" placeholder="SELECT count..config..." />
+                <marker date="1507879848000" expanded="true" signature="2212:2312" placeholder="SELECT * fro..friends..." />
+                <marker date="1507879848000" expanded="true" signature="2212:2313" placeholder="SELECT * fro..friends..." />
+                <marker date="1507879848000" expanded="true" signature="2212:2325" placeholder="SELECT * fro..friends..." />
+                <marker date="1507879848000" expanded="true" signature="2212:2344" placeholder="SELECT * fro..friends..." />
+                <marker date="1507879848000" expanded="true" signature="2212:2345" placeholder="SELECT * fro..friends..." />
+                <marker date="1507879848000" expanded="true" signature="2212:2379" placeholder="SELECT * fro..friends..." />
+                <marker date="1507879848000" expanded="true" signature="2454:2627" placeholder="UPDATE frien..." />
+                <marker date="1507879848000" expanded="true" signature="2686:2960" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -106,34 +63,26 @@
       <file leaf-file-name="serve.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.208333" vertical-offset="865" max-vertical-offset="1650">
-              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+            <state vertical-scroll-proportion="-13.5" vertical-offset="966" max-vertical-offset="1560">
+              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
               <folding>
-                <marker date="1507796766000" expanded="true" signature="1937:2054" placeholder="SELECT count..." />
-                <marker date="1507796766000" expanded="true" signature="2091:2208" placeholder="SELECT count..." />
-                <marker date="1507796766000" expanded="true" signature="2373:2546" placeholder="UPDATE frien..." />
-                <marker date="1507796766000" expanded="true" signature="2607:2855" placeholder="insert into ..." />
+                <marker date="1507878759000" expanded="true" signature="1982:2114" placeholder="SELECT * fro..friends..." />
+                <marker date="1507878759000" expanded="true" signature="2227:2400" placeholder="UPDATE frien..." />
+                <marker date="1507878759000" expanded="true" signature="2461:2731" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
+      <file leaf-file-name="send.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="3330" max-vertical-offset="5700">
-              <caret line="256" column="0" selection-start-line="256" selection-start-column="0" selection-end-line="265" selection-end-column="9" />
+            <state vertical-scroll-proportion="-18.125" vertical-offset="735" max-vertical-offset="1320">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="23" />
               <folding>
-                <marker date="1507797177000" expanded="true" signature="7879:7927" placeholder="SELECT count..." />
-                <marker date="1507797177000" expanded="true" signature="7879:7928" placeholder="SELECT count..." />
-                <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-                <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-                <marker date="1507797177000" expanded="true" signature="8077:8293" placeholder="UPDATE confi..." />
-                <marker date="1507797177000" expanded="true" signature="8077:8295" placeholder="UPDATE confi..." />
-                <marker date="1507797177000" expanded="true" signature="8077:8312" placeholder="UPDATE confi..." />
-                <marker date="1507797177000" expanded="true" signature="8077:8314" placeholder="UPDATE confi..." />
-                <marker date="1507797177000" expanded="true" signature="8077:8315" placeholder="UPDATE confi..." />
-                <marker date="1507797177000" expanded="true" signature="8359:8654" placeholder="insert into ..." />
+                <marker date="1507860016000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
+                <marker date="1507860016000" expanded="true" signature="1163:1206" placeholder="select * fro..friends..." />
+                <marker date="1507860016000" expanded="true" signature="2366:2587" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -149,13 +98,20 @@
       <list>
         <option value="$PROJECT_DIR$/phpinfo.php" />
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
-        <option value="$PROJECT_DIR$/serve.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" />
         <option value="$PROJECT_DIR$/dbtest.php" />
-        <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
         <option value="$PROJECT_DIR$/send.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Api/friends.php" />
+        <option value="$PROJECT_DIR$/api/config/dbs.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Model/Friends.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Api/Friends.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Model/Dialog.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Model/Config.php" />
+        <option value="$PROJECT_DIR$/serve.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Api/Dialog.php" />
+        <option value="$PROJECT_DIR$/run.php" />
       </list>
     </option>
   </component>
@@ -164,8 +120,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -232,15 +189,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vbot" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,19 +203,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vbot" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,15 +225,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hanson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vbot" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -296,7 +233,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,6 +308,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="&quot;Content&quot;&#9;null&#9;null" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/src/app/Api" />
+      <recent name="$PROJECT_DIR$/api/src/app/Model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -367,13 +359,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55259025" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -461,18 +453,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4185" max-vertical-offset="5415">
           <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
-          <folding>
-            <marker date="1507797177000" expanded="true" signature="7879:7927" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7928" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8293" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8295" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8312" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8314" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8315" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8359:8654" placeholder="insert into ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -481,9 +462,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1260">
           <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
-            <marker date="1507858821000" expanded="true" signature="2182:2283" placeholder="SELECT * fro..friends..." />
-            <marker date="1507858821000" expanded="true" signature="2393:2566" placeholder="UPDATE frien..." />
-            <marker date="1507858821000" expanded="true" signature="2625:2873" placeholder="insert into ..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2312" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2313" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2325" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2344" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2345" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2379" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2454:2627" placeholder="UPDATE frien..." />
+            <marker date="1507879848000" expanded="true" signature="2686:2960" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -525,19 +511,6 @@
         <state vertical-scroll-proportion="-6.4166665" vertical-offset="1706" max-vertical-offset="2565">
           <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.208333" vertical-offset="865" max-vertical-offset="1650">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <marker date="1507796766000" expanded="true" signature="1937:2054" placeholder="SELECT count..." />
-            <marker date="1507796766000" expanded="true" signature="2091:2208" placeholder="SELECT count..." />
-            <marker date="1507796766000" expanded="true" signature="2373:2546" placeholder="UPDATE frien..." />
-            <marker date="1507796766000" expanded="true" signature="2607:2855" placeholder="insert into ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,22 +575,10 @@
         <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="480">
           <caret line="8" column="115" selection-start-line="8" selection-start-column="115" selection-end-line="8" selection-end-column="115" />
           <folding>
-            <marker date="1507804965000" expanded="true" signature="481:619" placeholder="insert into ..." />
-            <marker date="1507804965000" expanded="true" signature="647:683" placeholder="SELECT count..." />
-            <marker date="1507804965000" expanded="true" signature="804:915" placeholder="UPDATE confi..." />
-            <marker date="1507804965000" expanded="true" signature="963:1146" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.25" vertical-offset="837" max-vertical-offset="1650">
-          <caret line="69" column="90" selection-start-line="69" selection-start-column="90" selection-end-line="69" selection-end-column="90" />
-          <folding>
-            <marker date="1507858821000" expanded="true" signature="2182:2283" placeholder="SELECT * fro..friends..." />
-            <marker date="1507858821000" expanded="true" signature="2393:2566" placeholder="UPDATE frien..." />
-            <marker date="1507858821000" expanded="true" signature="2625:2873" placeholder="insert into ..." />
+            <marker date="1507804965000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1507804965000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1507804965000" expanded="true" signature="-1:-1" placeholder="UPDATE confi..." />
+            <marker date="1507804965000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -656,64 +617,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
+    <entry file="file://$PROJECT_DIR$/api/runtime/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="3330" max-vertical-offset="5700">
-          <caret line="256" column="0" selection-start-line="256" selection-start-column="0" selection-end-line="265" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/phalapi/kernal/src/Model/NotORMModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4871795" vertical-offset="1740" max-vertical-offset="2325">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Model/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2820513" vertical-offset="0" max-vertical-offset="585">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Model/Friends.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="585">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <marker date="1507797177000" expanded="true" signature="7879:7927" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7928" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="7879:7944" placeholder="SELECT count..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8293" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8295" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8312" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8314" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8077:8315" placeholder="UPDATE confi..." />
-            <marker date="1507797177000" expanded="true" signature="8359:8654" placeholder="insert into ..." />
+            <element signature="e#6#91#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Model/Dialog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17948718" vertical-offset="0" max-vertical-offset="585">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/dbs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35897437" vertical-offset="165" max-vertical-offset="750">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Friends.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71794873" vertical-offset="0" max-vertical-offset="585">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#112#128#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.102564104" vertical-offset="60" max-vertical-offset="645">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/public/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.208333" vertical-offset="304" max-vertical-offset="1200">
-          <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.36480686" vertical-offset="440" max-vertical-offset="1185">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
-            <marker date="1507859415000" expanded="true" signature="865:913" placeholder="SELECT count..." />
-            <marker date="1507859415000" expanded="true" signature="865:914" placeholder="SELECT count..." />
-            <marker date="1507859415000" expanded="true" signature="865:926" placeholder="SELECT count..." />
-            <marker date="1507859415000" expanded="true" signature="865:926" placeholder="SELECT count..." />
-            <marker date="1507859415000" expanded="true" signature="865:927" placeholder="SELECT count..db..." />
-            <marker date="1507859415000" expanded="true" signature="1059:1150" placeholder="UPDATE confi..." />
-            <marker date="1507859415000" expanded="true" signature="1059:1152" placeholder="UPDATE confi..." />
-            <marker date="1507859415000" expanded="true" signature="1059:1167" placeholder="UPDATE confi..." />
-            <marker date="1507859415000" expanded="true" signature="1059:1168" placeholder="UPDATE confi..." />
-            <marker date="1507859415000" expanded="true" signature="1066:1150" placeholder="SELECT count..config..." />
+            <marker date="1507859415000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1507859415000" expanded="true" signature="-1:-1" placeholder="UPDATE confi..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.44206008" vertical-offset="3793" max-vertical-offset="5700">
+          <caret line="256" column="53" selection-start-line="256" selection-start-column="53" selection-end-line="256" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Text.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.375" vertical-offset="672" max-vertical-offset="1380">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="252" />
+        <state vertical-scroll-proportion="0.36480686" vertical-offset="1070" max-vertical-offset="1350">
+          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
           <folding>
-            <marker date="1507859098000" expanded="true" signature="1987:2216" placeholder="insert into ..." />
+            <marker date="1507859098000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7699115" vertical-offset="0" max-vertical-offset="1350">
-          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+        <state vertical-scroll-proportion="-18.125" vertical-offset="735" max-vertical-offset="1320">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="23" />
           <folding>
             <marker date="1507860016000" expanded="true" signature="833:878" placeholder="SELECT * FRO..config..." />
-            <marker date="1507860016000" expanded="true" signature="1163:1200" placeholder="select * fro..friends..." />
             <marker date="1507860016000" expanded="true" signature="1163:1206" placeholder="select * fro..friends..." />
-            <marker date="1507860016000" expanded="true" signature="1163:1208" placeholder="SELECT * FRO..friends..." />
             <marker date="1507860016000" expanded="true" signature="2366:2587" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375" vertical-offset="450" max-vertical-offset="1770">
+          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding>
+            <element signature="e#112#128#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.5" vertical-offset="966" max-vertical-offset="1560">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+          <folding>
+            <marker date="1507878759000" expanded="true" signature="1982:2114" placeholder="SELECT * fro..friends..." />
+            <marker date="1507878759000" expanded="true" signature="2227:2400" placeholder="UPDATE frien..." />
+            <marker date="1507878759000" expanded="true" signature="2461:2731" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71794873" vertical-offset="990" max-vertical-offset="1665">
+          <caret line="90" column="233" selection-start-line="90" selection-start-column="233" selection-end-line="90" selection-end-column="233" />
+          <folding>
+            <marker date="1507879848000" expanded="true" signature="2212:2312" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2313" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2325" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2344" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2345" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2212:2379" placeholder="SELECT * fro..friends..." />
+            <marker date="1507879848000" expanded="true" signature="2454:2627" placeholder="UPDATE frien..." />
+            <marker date="1507879848000" expanded="true" signature="2686:2960" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

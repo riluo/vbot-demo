@@ -76,18 +76,19 @@ $vbot->messageHandler->setHandler(function ($message) {
 // 获取监听器实例
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
+    $myself = vbot('myself');
     //print_r($contacts['friends']);
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
            foreach($v as $vv){
-               $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
+               $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself['Uin']."'");
                $stmt->execute();
 
                if($stmt->rowCount()>0) {
                    $pdo->exec("UPDATE friends set UserName='".$vv["UserName"]."',UpdateTime='".date("Y-m-d H:i:s",time())."' where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."'");
                } else {
-                   $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+                   $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".$myself['Uin']."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
                }
            }
         };
