@@ -77,6 +77,6 @@ list($returnCode, $returnContent) = http_post_json($url, $jsonStr);
 var_dump($returnContent);
 var_dump($returnCode);
 if($returnCode == 200){
-    $pdo->exec("insert into dialog(`Type`,FromUserName,FromNickName,ToUserName,ToNickName,Content,CreateTime) values('1','".$username."','".$nickname."','".$ToUserName."','".$ToNickName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
+    $db->exec("insert into dialog(`Type`,FromUserName,FromNickName,ToUserName,ToNickName,Content,CreateTime) values('1','".$username."','".$nickname."','".$ToUserName."','".$ToNickName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
 }
 $db = null;
