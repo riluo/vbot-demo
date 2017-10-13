@@ -25,7 +25,12 @@ class Friends extends Api {
     }
 
     public function lists() {
+        $config_model = new model_config();
+        $config_config = $config_model->lists()->order('id DESC')->fetch();
+
+        $selfName = $config_config['Uin'];
+
         $model = new model_friends();
-        return $model->lists()->fetchAll();
+        return $model->lists()->where("who",$selfName)->fetchAll();
     }
 }
