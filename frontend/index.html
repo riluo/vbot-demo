@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- saved from url=(0018)https://wx.qq.com/ -->
+<html lang="zh_CN" ng-app="chatApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>微信网页版</title>
+    <script src="js/aq_common.js"></script>
+    <link rel="stylesheet" href="css/wx.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <!--<script src="js/jquery.scrollbar.js"></script>-->
+    <script src="js/main.js"></script>
+</head>
+<body class="ng-scope ng-isolate-scope loaded" ng-controller="chatCtrl">
+<div class="main">
+    <div class="main_inner">
+        <div class="panel">
+            <!--个人信息-->
+            <div class="header">
+                <div class="avatar">
+                    <img class="img" src="imgs/头像.png   ">
+                </div>
+                <div class="info">
+                    <h3 class="nickname">
+                        <span class="display_name ng-binding">阳子</span>
+                        <a class="opt" href="javascript:;">
+                            <i class="web_wechat_add"></i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            <!--搜索-->
+            <div class="search_bar" id="search_bar">
+                <i class="web_wechat_search"></i>
+                <input class="frm_search ng-isolate-scope ng-pristine ng-valid" type="text" placeholder="搜索">
+            </div>
+            <!--导航条-->
+            <div class="tab">
+                <!--聊天-->
+                <div class="tab_item">
+                    <a class="chat" title="聊天" href="#">
+                        <i class="web_wechat_tab_chat web_wechat_tab_chat_hl"}></i>
+                    </a>
+                </div>
+                <!-- 阅读 -->
+                <div class="tab_item ng-scope">
+                    <a class="chat" ui-sref="read" title="阅读" href="#">
+                        <i class="web_wechat_tab_public"></i>
+                    </a>
+                 </div>
+                <!-- 通讯录 -->
+                <div class="tab_item no_extra">
+                    <a class="chat" ui-sref="contact" title="通讯录" href="#">
+                        <i class="web_wechat_tab_friends"></i>
+                    </a>
+                </div>
+            </div>
+            <div ui-view="navView" id="navView" class="ng-scope"></div>
+<!-------------------------------导航条结束---------------------------->
+            <div class="nav_view ng-scope"  style="visibility: visible; width: auto;">
+                <!--BEGIN chat list-->
+                <div class="scroll-wrapper chat_list scrollbar-dynamic" style="position: relative;">
+                    <div jquery-scrollbar="" class="chat_list scrollbar-dynamic scroll-content scroll-scrolly_visible" id="J_NavChatScrollBody" data-username="" style="margin-bottom: 0px; margin-right: 0px; height: 458px;">
+
+                    <div class="ng-scope">
+                        <div class="top-placeholder ng-scope" style="height: 0px;"></div>
+                        <!-- end ngRepeat: chatContact in chatList track by chatContact.UserName -->
+                        <div class="  ng-scope" ng-repeat="item in arrList" ng-click="goChat(item.UserName,item.RemarkName!==''?item.RemarkName:item.NickName)">
+                        <!-- ngIf: !chatContact.isShieldUser() -->
+                            <div class="chat_item slide-left ng-scope" ng-class="{'active' : item.RemarkName == currentUserName || item.NickName == currentUserName}">
+                                <div class="avatar">
+                                    <img class="img" src="imgs/头像.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3 class="nickname">
+                                        <span class="nickname_text ng-binding">{{item.RemarkName!==""?item.RemarkName:item.NickName}}</span>
+                                    </h3>
+                                </div>
+                            </div><!-- end ngIf: !chatContact.isShieldUser() -->
+                        </div><!-- end ngRepeat: chatContact in chatList track by chatContact.UserName -->
+                    </div>
+                </div>
+                    <div class="scroll-element scroll-x scroll-scrolly_visible">
+                        <div class="scroll-element_corner"></div>
+                        <div class="scroll-arrow scroll-arrow_less"></div>
+                        <div class="scroll-arrow scroll-arrow_more"></div>
+                        <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_inner-wrapper">
+                                <div class="scroll-element_inner scroll-element_track">
+                                    <div class="scroll-element_inner-bottom"></div>
+                                </div>
+                            </div>
+                            <div class="scroll-bar" style="width: 89px;">
+                            <div class="scroll-bar_body">
+                                <div class="scroll-bar_body-inner"></div>
+                            </div>
+                                <div class="scroll-bar_bottom"></div>
+                                <div class="scroll-bar_center"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-element scroll-y scroll-scrolly_visible">
+                        <div class="scroll-element_corner"></div>
+                        <div class="scroll-arrow scroll-arrow_less"></div>
+                        <div class="scroll-arrow scroll-arrow_more"></div>
+                        <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_inner-wrapper">
+                                <div class="scroll-element_inner scroll-element_track">
+                                    <div class="scroll-element_inner-bottom"></div>
+                                </div>
+                            </div>
+                            <div class="scroll-bar" style="height: 191px; top: 0px;">
+                            <div class="scroll-bar_body">
+                                <div class="scroll-bar_body-inner"></div>
+                            </div>
+                                <div class="scroll-bar_bottom"></div>
+                                <div class="scroll-bar_center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END chat list-->
+            </div>
+</div>
+<div ui-view="contentView" style="height:100%;" class="ng-scope">
+    <div id="chatArea" class="box chat ng-scope no-choose">
+       <div class="box_hd">
+          <div id="chatRoomMembersWrap"></div>
+              <div class="title_wrap">
+                  <div class="title poi">
+                        <a class="title_name ng-binding">{{nickname}}</a>
+                  </div>
+              </div>
+       </div>
+        <!--聊天内容区-->
+<div class="scroll-wrapper box_bd chat_bd scrollbar-dynamic" style="position: absolute;">
+    <div scroll-to-bottom="true" class="box_bd chat_bd scrollbar-dynamic scroll-content" data-cm="{&quot;type&quot;:&quot;clean&quot;,&quot;username&quot;:&quot;&quot;}" style="margin-bottom: 0px; margin-right: 0px; height: 381px;">
+        <div id="chat-area" mm-repeat="message in chatContent" data-height-calc="heightCalc" data-buffer-height="300" data-pre-calc="true" class="ng-scope">
+            <div ng-style="{height:topHeight}" class="top-placeholder ng-scope" style="height: 0px;"></div>
+            <!-- ngRepeat: message in chatContent -->
+            <div ng-repeat="message in chatContent" class="ng-scope">
+                <div message-directive class="clearfix" ng-class="{'slide-top':messagesAnimate}">
+                    <div ng-switch on="message.MsgType"
+                         ng-init="contact = getUserContact(message.MMActualSender,message.MMPeerUserName);">
+                        <!-- 系统消息 -->
+                        <div ng-switch-default class="message"
+                             ng-class='{"you":!message.MMIsSend,"me":message.MMIsSend}'>
+                            <div ng-if="(message.CreateTime||(newMsg && newMsg==message))" class="message_system ng-scope">
+                                <div ng-if="(message.CreateTime&&!(newMsg && newMsg==message))" class="content ng-binding ng-scope">{{message.CreateTime}}</div>
+                            </div>
+                            <img class="avatar" src="imgs/头像.png"/>
+                            <div class="content">
+                                <div class="bubble js_message_bubble bubble_default" ng-class='{"bubble_default left":!message.MMIsSend,"bubble_primary right":message.MMIsSend, "arrow_primary": message.MsgType == CONF.MSGTYPE_APP && message.AppMsgType == CONF.APPMSGTYPE_URL, "no_arrow": message.MsgType == CONF.MSGTYPE_IMAGE || message.MsgType == CONF.MSGTYPE_MICROVIDEO || message.MsgType == CONF.MSGTYPE_VIDEO}'>
+                                    <!--纯文本消息-->
+                                    <div class="bubble_cont">
+                                        <div class="plain">
+                                            <pre class="js_message_plain" >{{message.Content}}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-style="{height:bottomHeight}" class="bottom-placeholder ng-scope" style="height: 0px;"></div>
+        </div>
+        <div id="prerender" style="
+      visibility: hidden;
+  position: absolute;
+  width: 100%;
+  top: 333px;
+  height: 0;
+  padding: 0 19px;
+  box-sizing: border-box;
+  margin-left: -19px;
+  overflow: hidden;
+"></div>
+            <!-- ngIf: chatContent.length < 1 -->
+        <div ng-if="chatContent.length &lt; 1" class="message_empty ng-scope">
+            <i class="web_wechat_nomes_icon" ng-hide="currentContact.getDisplayName()"></i>
+            <p ng-show="currentContact.getDisplayName()" class="ng-hide">暂时没有新消息</p>
+            <p ng-hide="currentContact.getDisplayName()" class="">未选择聊天</p>
+        </div>
+        <!-- end ngIf: chatContent.length < 1 -->
+        </div>
+    <div class="scroll-element scroll-x scroll-scrolly_visible">
+        <div class="scroll-element_corner"></div>
+        <div class="scroll-arrow scroll-arrow_less"></div>
+        <div class="scroll-arrow scroll-arrow_more"></div>
+        <div class="scroll-element_outer">
+            <div class="scroll-element_size"></div>
+            <div class="scroll-element_inner-wrapper">
+                <div class="scroll-element_inner scroll-element_track">
+                    <div class="scroll-element_inner-bottom"></div>
+                </div>
+            </div>
+            <div class="scroll-bar" style="width: 96px;">
+            <div class="scroll-bar_body">
+                <div class="scroll-bar_body-inner"></div>
+            </div>
+                <div class="scroll-bar_bottom"></div>
+            <div class="scroll-bar_center"></div>
+        </div>
+        </div>
+    </div>
+    <div class="scroll-element scroll-y scroll-scrolly_visible">
+        <div class="scroll-element_corner"></div>
+        <div class="scroll-arrow scroll-arrow_less"></div>
+        <div class="scroll-arrow scroll-arrow_more"></div>
+        <div class="scroll-element_outer">
+            <div class="scroll-element_size"></div>
+            <div class="scroll-element_inner-wrapper">
+                <div class="scroll-element_inner scroll-element_track">
+                    <div class="scroll-element_inner-bottom"></div>
+                </div>
+            </div>
+            <div class="scroll-bar" style="height: 96px;">
+            <div class="scroll-bar_body">
+                <div class="scroll-bar_body-inner"></div>
+            </div>
+                <div class="scroll-bar_bottom"></div>
+            <div class="scroll-bar_center"></div>
+        </div>
+        </div>
+    </div>
+</div>
+<!--发送内容区域-->
+            <div class="box_ft">
+                <div class="toolbar" id="tool_bar">
+                    <a class="web_wechat_face" href="javascript:;" title="表情"></a>
+                    <a class="web_wechat_screencut ng-isolate-scope" title="截屏"></a>
+                    <a class="web_wechat_pic js_fileupload ng-isolate-scope webuploader-container" href="javascript:;" title="图片和文件">
+                    </a>
+                </div>
+                <div class="content ng-isolate-scope">
+                    <pre contenteditable id="editArea"  class="flex edit_area ng-isolate-scope ng-pristine ng-valid" ng-model="editAreaCtn" ng-keydown="editAreaKeydown($event)"></pre>
+                </div>
+                <div class="action">
+                    <button class="btn btn_send" ng-click="sendTextMessage()">发送</button>
+                </div>
+            </div>
+            <!--END FT-->
+        </div>
+    </div>
+        <!--END chat-->
+
+        <!--BEGIN contextMenu-->
+        <div id="contextMenu" class="dropdown contextMenu open ng-isolate-scope ng-hide" ng-show="isShowContextMenu" ng-style="contextStyle" context-menu-directive="">
+            <ul class="dropdown_menu">
+                <!-- ngRepeat: item in contextMenuList -->
+            </ul>
+        </div>
+        <!--END contextMenu-->
+    </div>
+    <p class="copyright">
+        <span>© 1998 - 2017 Tencent Inc. All Rights Reserved</span>
+        <span class="sep"></span>
+        <a href="https://login.weixin.qq.com/faq_webwx?lang=zh_CN" target="_blank">帮助</a>
+    </p>
+</div>
+<div style="position:absolute;top:0;left:0;width:0;height:0;">
+    <audio id="voiceMsgPlayer" class="voicePlayer"></audio>
+    <audio id="msgNoticePlayer" class="voicePlayer"></audio>
+</div>
+
+</body>
+</html>
