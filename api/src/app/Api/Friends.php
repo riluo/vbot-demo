@@ -9,6 +9,7 @@ namespace App\Api;
 
 use PhalApi\Api;
 use App\Model\Friends as model_friends;
+use App\Model\Config as model_config;
 
 class Friends extends Api {
 
