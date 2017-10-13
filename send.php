@@ -38,6 +38,7 @@ while($row = $sth->fetch()){
     $DeviceID = $row['DeviceID'];
     $pass_ticket = $row['pass_ticket'];
     $username = $row['username'];
+    $nickname = $row['nickname'];
 
 }
 
@@ -45,12 +46,14 @@ $sql = "select * from friends where NickName='禅茶一味'";
 $sth = $db->query($sql);
 while($row = $sth->fetch()){
     $ToUserName = $row['UserName'];
+    $ToNickName = $row['NickName'];
 }
 
-$db = null;
+
 
 #$content =  Content::formatContent("Hello friend, I send this info by python code. 你好, 我现在在给你发送信息");
 #$data = json_encode("Hello friend, I send this info by python code. 你好, 我现在在给你发送信息", JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+$Content = "Hello friend, I send this info by PHP code. 早上好, 我现在在给你发送测试信息，你是独一份！";
 $url = "https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?pass_ticket=".$pass_ticket;
 $arr = array(
     "BaseRequest" => array(
@@ -61,7 +64,7 @@ $arr = array(
     ),
     "Msg" => array(
         "Type"=>1,
-        "Content"=>"Hello friend, I send this info by python code. 你好, 我现在在给你发送信息",
+        "Content"=>$Content,
         "FromUserName"=>$username,
         "ToUserName"=> $ToUserName,//NickName:撸货买买买
         "LocalID"=>time() * 1e4,
@@ -73,3 +76,7 @@ $jsonStr = json_encode($arr,JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 list($returnCode, $returnContent) = http_post_json($url, $jsonStr);
 var_dump($returnContent);
 var_dump($returnCode);
+if($returnCode == 200){
+    $pdo->exec("insert into dialog(`Type`,FromUserName,FromNickName,ToUserName,ToNickName,Content,CreateTime) values('1','".$username."','".$nickname."','".$ToUserName."','".$ToNickName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
+}
+$db = null;
