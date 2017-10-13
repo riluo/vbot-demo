@@ -75,7 +75,7 @@ class Dialog extends Api {
 
 
         $jsonStr = json_encode($arr,JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-        list($returnCode, $returnContent) = http_post_json($url, $jsonStr);
+        list($returnCode, $returnContent) = $this->http_post_json($url, $jsonStr);
 
         if($returnCode == 200){
             //save to db
