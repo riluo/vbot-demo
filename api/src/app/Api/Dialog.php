@@ -36,7 +36,8 @@ class Dialog extends Api {
 
         $model = new model_dialog();
 
-        return $model->lists()->where('(FromNickName = ? AND ToNickName = ?) OR (ToNickName = ? AND FromNickName = ?)', array($selfName, $this->nickname, $this->nickname, $selfName))->order('CreateTime DESC')->fetchAll();
+
+        return $model->lists()->where('(FromNickName = ? AND ToNickName = ?) OR (ToNickName = ? AND FromNickName = ?)', array($selfName, $this->nickname, $selfName, $this->nickname))->order('CreateTime DESC')->fetchAll();
     }
 
     public function add() {
