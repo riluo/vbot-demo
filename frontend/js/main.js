@@ -1,106 +1,30 @@
 var app = angular.module("chatApp",["ng"]);
-app.controller("chatCtrl",["$scope", "$timeout", "$http",  function($scope,$timeout,$http){
+app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function($scope,$timeout,$http,$interval){
     $scope.xs=false;
     var date=new Date();
     var H = date.getHours();
     var M = date.getMinutes();
     $http.get("http://119.29.133.42/api/public/?s=Friends.Lists").success(function(data){
         $scope.arrList = data.data
+      console.log(data.data)
     })
     $scope.contentUpdate = function(){
+      $interval(function(){
         $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname+"http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
- /*           data = {
-                "ret": 200,
-                "data": [
-                    {
-                        "id": "201",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u5927\u65b9\u516c\u5f00",
-                        "CreateTime": "2017-10-13 22:03:22"
-                    },
-                    {
-                        "id": "200",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u4e70\u90a3\u4e2a\u6d77\u6d0b",
-                        "CreateTime": "2017-10-13 22:03:17"
-                    },
-                    {
-                        "id": "199",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u7684",
-                        "CreateTime": "2017-10-13 22:03:08"
-                    },
-                    {
-                        "id": "198",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u89c4\u8303\u5316",
-                        "CreateTime": "2017-10-13 22:01:03"
-                    },
-                    {
-                        "id": "197",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u53d1\u8fc7\u706b",
-                        "CreateTime": "2017-10-13 21:53:53"
-                    },
-                    {
-                        "id": "196",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u7535\u996d\u9505",
-                        "CreateTime": "2017-10-13 21:53:44"
-                    },
-                    {
-                        "id": "189",
-                        "Type": "1",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u5927\u795e",
-                        "CreateTime": "2017-10-13 21:47:20"
-                    },
-                    {
-                        "id": "198",
-                        "Type": "2",
-                        "FromUserName": "@4e6ba1a4d15c16fd05d88172ed13ad58",
-                        "FromNickName": "\u65e5\u843d",
-                        "ToUserName": "@07aa0e8b340b5240bcf4ea13a5634627",
-                        "ToNickName": "\u8001\u9b4f",
-                        "Content": "\u5927\u795e",
-                        "CreateTime": "2017-10-13 21:47:20"
-                    }
+          if(data.data.length!==0){
+            $scope.chatContent=data.data.reverse();
 
-                ],
-                "msg": ""
-            };*/
-            if(data.data.length!==0){
-                $scope.chatContent=data.data.reverse();
-                console.log($scope.chatContent)
-            }
+          }
+        })
+      },5000)
+        $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname+"http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
+          if(data.data.length!==0){
+            $scope.chatContent=data.data.reverse();
+            $scope.FromNickName=data.data[0].FromNickName
+            console.log($scope.FromNickName)
 
+            console.log($scope.chatContent)
+          }
         })
     }
     $scope.goChat=function(currentUserName,nickname){
