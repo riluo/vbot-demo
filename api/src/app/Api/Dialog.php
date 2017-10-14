@@ -28,7 +28,7 @@ class Dialog extends Api {
 
     public function lists() {
         $config_model = new model_config();
-        $config_config = $config_model->lists()->order('id DESC')->fetch();
+        $config_config = $config_model->lists()->order('UpdateTime DESC')->fetch();
 
         $selfName = $config_config['nickname'];
 
@@ -42,7 +42,7 @@ class Dialog extends Api {
 
     public function add() {
         $config_model = new model_config();
-        $config_config = $config_model->lists()->order('id DESC')->fetch();
+        $config_config = $config_model->lists()->order('UpdateTime DESC')->fetch();
 
 
         //send to weixin

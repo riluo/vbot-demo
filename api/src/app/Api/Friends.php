@@ -27,7 +27,7 @@ class Friends extends Api {
 
     public function lists() {
         $config_model = new model_config();
-        $config_config = $config_model->lists()->order('id DESC')->fetch();
+        $config_config = $config_model->lists()->order('UpdateTime DESC')->fetch();
 
         $selfName = $config_config['Uin'];
 
