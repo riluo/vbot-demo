@@ -65,18 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Server.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3867121" vertical-offset="3613" max-vertical-offset="5955">
-              <caret line="264" column="63" selection-start-line="264" selection-start-column="63" selection-end-line="264" selection-end-column="63" />
+            <state vertical-scroll-proportion="-10.083333" vertical-offset="3688" max-vertical-offset="5955">
+              <caret line="273" column="77" selection-start-line="273" selection-start-column="77" selection-end-line="273" selection-end-column="77" />
               <folding>
-                <marker date="1507963562000" expanded="true" signature="7883:7936" placeholder="SELECT * fro..config..." />
-                <marker date="1507963562000" expanded="true" signature="7976:8029" placeholder="SELECT * fro..config..." />
-                <marker date="1507963562000" expanded="true" signature="8187:8424" placeholder="UPDATE confi..." />
-                <marker date="1507963562000" expanded="true" signature="8468:8705" placeholder="UPDATE confi..." />
-                <marker date="1507963562000" expanded="true" signature="8751:9046" placeholder="insert into ..." />
-                <marker date="1507963562000" expanded="true" signature="9090:9385" placeholder="insert into ..." />
+                <marker date="1507963818000" expanded="true" signature="7883:7936" placeholder="SELECT * fro..config..." />
+                <marker date="1507963818000" expanded="true" signature="7976:8029" placeholder="SELECT * fro..config..." />
+                <marker date="1507963818000" expanded="true" signature="8187:8424" placeholder="UPDATE confi..." />
+                <marker date="1507963818000" expanded="true" signature="8468:8705" placeholder="UPDATE confi..." />
+                <marker date="1507963818000" expanded="true" signature="8751:9037" placeholder="insert into ..." />
+                <marker date="1507963818000" expanded="true" signature="9081:9376" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Myself.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3321976" vertical-offset="330" max-vertical-offset="1200">
+              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+              <folding>
+                <marker date="1507859415000" expanded="true" signature="865:914" placeholder="SELECT count..." />
+                <marker date="1507859415000" expanded="true" signature="1059:1167" placeholder="UPDATE confi..." />
               </folding>
             </state>
           </provider>
@@ -605,7 +618,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="1050">
           <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding />
+          <folding>
+            <marker date="1507859415000" expanded="true" signature="865:914" placeholder="SELECT count..." />
+            <marker date="1507859415000" expanded="true" signature="1059:1167" placeholder="UPDATE confi..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -628,12 +644,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4185" max-vertical-offset="5415">
           <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
           <folding>
-            <marker date="1507963562000" expanded="true" signature="7883:7936" placeholder="SELECT * fro..config..." />
-            <marker date="1507963562000" expanded="true" signature="7976:8029" placeholder="SELECT * fro..config..." />
-            <marker date="1507963562000" expanded="true" signature="8187:8424" placeholder="UPDATE confi..." />
-            <marker date="1507963562000" expanded="true" signature="8468:8705" placeholder="UPDATE confi..." />
-            <marker date="1507963562000" expanded="true" signature="8751:9046" placeholder="insert into ..." />
-            <marker date="1507963562000" expanded="true" signature="9090:9385" placeholder="insert into ..." />
+            <marker date="1507963818000" expanded="true" signature="7883:7936" placeholder="SELECT * fro..config..." />
+            <marker date="1507963818000" expanded="true" signature="7976:8029" placeholder="SELECT * fro..config..." />
+            <marker date="1507963818000" expanded="true" signature="8187:8424" placeholder="UPDATE confi..." />
+            <marker date="1507963818000" expanded="true" signature="8468:8705" placeholder="UPDATE confi..." />
+            <marker date="1507963818000" expanded="true" signature="8751:9037" placeholder="insert into ..." />
+            <marker date="1507963818000" expanded="true" signature="9081:9376" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -841,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36480686" vertical-offset="440" max-vertical-offset="1185">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/app/Api/Friends.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="45" max-vertical-offset="630">
@@ -949,15 +957,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3867121" vertical-offset="3613" max-vertical-offset="5955">
-          <caret line="264" column="63" selection-start-line="264" selection-start-column="63" selection-end-line="264" selection-end-column="63" />
+        <state vertical-scroll-proportion="-10.083333" vertical-offset="3688" max-vertical-offset="5955">
+          <caret line="273" column="77" selection-start-line="273" selection-start-column="77" selection-end-line="273" selection-end-column="77" />
           <folding>
-            <marker date="1507963562000" expanded="true" signature="7883:7936" placeholder="SELECT * fro..config..." />
-            <marker date="1507963562000" expanded="true" signature="7976:8029" placeholder="SELECT * fro..config..." />
-            <marker date="1507963562000" expanded="true" signature="8187:8424" placeholder="UPDATE confi..." />
-            <marker date="1507963562000" expanded="true" signature="8468:8705" placeholder="UPDATE confi..." />
-            <marker date="1507963562000" expanded="true" signature="8751:9046" placeholder="insert into ..." />
-            <marker date="1507963562000" expanded="true" signature="9090:9385" placeholder="insert into ..." />
+            <marker date="1507963818000" expanded="true" signature="7883:7936" placeholder="SELECT * fro..config..." />
+            <marker date="1507963818000" expanded="true" signature="7976:8029" placeholder="SELECT * fro..config..." />
+            <marker date="1507963818000" expanded="true" signature="8187:8424" placeholder="UPDATE confi..." />
+            <marker date="1507963818000" expanded="true" signature="8468:8705" placeholder="UPDATE confi..." />
+            <marker date="1507963818000" expanded="true" signature="8751:9037" placeholder="insert into ..." />
+            <marker date="1507963818000" expanded="true" signature="9081:9376" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321976" vertical-offset="330" max-vertical-offset="1200">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+          <folding>
+            <marker date="1507859415000" expanded="true" signature="865:914" placeholder="SELECT count..." />
+            <marker date="1507859415000" expanded="true" signature="1059:1167" placeholder="UPDATE confi..." />
           </folding>
         </state>
       </provider>
