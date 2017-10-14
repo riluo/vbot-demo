@@ -73,7 +73,7 @@ $vbot->messageHandler->setHandler(function ($message) {
 use PHPQRCode\QRcode;
 
 $uuid = $vbot->server->getVUuid();
-echo $uuid;
+//echo $uuid;
 $url = 'https://login.weixin.qq.com/l/'.$uuid;
 $imgName = time();
 $code = new QRcode();$code::png($url, "./img/".$imgName.".png", 'H', 4, 2);
@@ -89,7 +89,10 @@ $code = new QRcode();$code::png($url, "./img/".$imgName.".png", 'H', 4, 2);
 //$cmd = "php /data/wwwroot/default/vbot/serve.php $uuid";
 //pclose(popen($cmd.' > /dev/null &', 'r'));
 ?>
+<span id="uuid" style="display: none;"><?php echo $uuid;?></span>
 <p align="center"><img src="./img/<?php echo $imgName;?>.png" style="margin-top:10px;" /></p>
+<p align="center">扫描后点击以下按钮跳转</p>
+<p align="center"><input type="button" value="跳转" onClick="window.location.href='./frontend/index.html'"></p>
 <?php
 $cmd = "/usr/local/php/bin/php /data/wwwroot/Vbot/vbot-demo/serve.php $uuid";
 pclose(popen($cmd.' > /tmp/vbot.log &', 'r'));
