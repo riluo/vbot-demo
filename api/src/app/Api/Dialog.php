@@ -28,7 +28,7 @@ class Dialog extends Api {
 
     public function lists() {
         $config_model = new model_config();
-        $config_config = $config_model->lists()->order('UpdateTime DESC')->fetch();
+        $config_config = $config_model->getORM()->order('UpdateTime DESC')->fetch();
 
         $selfName = $config_config['nickname'];
 
@@ -37,12 +37,12 @@ class Dialog extends Api {
         $model = new model_dialog();
 
 
-        return $model->lists()->where('(FromNickName = ? AND ToNickName = ?) OR (ToNickName = ? AND FromNickName = ?)', array($selfName, $this->nickname, $selfName, $this->nickname))->order('CreateTime DESC')->fetchAll();
+        return $model->getORM()->where('(FromNickName = ? AND ToNickName = ?) OR (ToNickName = ? AND FromNickName = ?)', array($selfName, $this->nickname, $selfName, $this->nickname))->order('CreateTime DESC')->fetchAll();
     }
 
     public function add() {
         $config_model = new model_config();
-        $config_config = $config_model->lists()->order('UpdateTime DESC')->fetch();
+        $config_config = $config_model->getORM()->order('UpdateTime DESC')->fetch();
 
 
         //send to weixin
@@ -85,9 +85,9 @@ class Dialog extends Api {
             $model = new model_dialog();
 
             $data = array('Type' => '1', 'FromUserName' => $selfUserName, 'FromNickName' => $selfNickName, 'ToUserName' => $this->username, 'ToNickName' => $this->nickname, 'Content' => $this->content, 'CreateTime' => date("Y-m-d H:i:s",time()));
-            $model->lists()->insert($data);
+            $model->getORM()->insert($data);
 
-            return $model->lists()->insert_id();
+            return $model->getORM()->insert_id();
         }
         return null;
 

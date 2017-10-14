@@ -11,7 +11,7 @@ use PhalApi\Model\NotORMModel as NotORM;
 
 class Friends extends NotORM {
 
-    public function lists() {
+    public function getORM() {
         $friends = $this->getORM();
         return $friends;
     }
