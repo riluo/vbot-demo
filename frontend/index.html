@@ -144,13 +144,13 @@
                          ng-init="contact = getUserContact(message.MMActualSender,message.MMPeerUserName);">
                         <!-- 系统消息 -->
                         <div ng-switch-default class="message"
-                             ng-class='{"you":message.Type==2,"me":message.Type==1}'>
+                             ng-class='{"you":message.ToNickName==nickname,"me":!message.ToNickName==nickname}'>
                             <div ng-if="(message.CreateTime||(newMsg && newMsg==message))" class="message_system ng-scope">
                                 <div ng-if="(message.CreateTime&&!(newMsg && newMsg==message))" class="content ng-binding ng-scope">{{message.CreateTime.slice(11,16)}}</div>
                             </div>
                             <img class="avatar" src="imgs/head_img.png"/>
                             <div class="content">
-                                <div class="bubble js_message_bubble" ng-class='{"bubble_default left":message.Type==2,"bubble_primary right":message.Type==1}'>
+                                <div class="bubble js_message_bubble" ng-class='{"bubble_default left":message.ToNickName==nickname,"bubble_primary right":!message.ToNickName==nickname}'>
                                     <!--纯文本消息-->
                                     <div class="bubble_cont">
                                         <div class="plain">
