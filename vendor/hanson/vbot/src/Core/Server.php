@@ -257,12 +257,23 @@ class Server
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
 
         $stmt=$pdo->prepare("SELECT * from config where Uin = '".$data['wxuin']."'");
+
+        $this->vbot->console->log("SELECT * from config where Uin = '".$data['wxuin']."'");
+
         $stmt->execute();
+
+        $this->vbot->console->log("rowCount:".$stmt->rowCount());
+
 
         if($stmt->rowCount()>0) {
             $pdo->exec("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = '".$data['wxuin']."'");
+
+            $this->vbot->console->log("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = '".$data['wxuin']."'");
+
         } else {
             $pdo->exec("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+
+            $this->vbot->console->log("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
         }
 
 
