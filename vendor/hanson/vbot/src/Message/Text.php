@@ -82,7 +82,7 @@ class Text extends Message implements MessageInterface
         $FromNickName = vbot('myself')->nickname;
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
 
-        $pdo->exec("insert into dialog(`Type`,FromUserName,FromNickName,ToUserName,ToNickName,Content,CreateTime) values('1','".$FromUserName."','".$FromNickName."','".$ToUserName."','".$ToNickName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
+        $pdo->exec("insert into dialog(`Type`,FromUserName,FromNickName,ToUserName,ToNickName,Content,CreateTime) values('1','".$ToUserName."','".$ToNickName."','".$FromUserName."','".$FromNickName."','".$Content."','".date("Y-m-d H:i:s",time())."')");
     }
 
 
