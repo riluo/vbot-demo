@@ -4,11 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>微信网页版</title>
-    <script src="js/aq_common.js"></script>
     <link rel="stylesheet" href="css/wx.css">
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/angular.js"></script>
-    <!--<script src="js/jquery.scrollbar.js"></script>-->
     <script src="js/main.js"></script>
 </head>
 <body class="ng-scope ng-isolate-scope loaded" ng-controller="chatCtrl">
@@ -18,7 +16,7 @@
             <!--个人信息-->
             <div class="header">
                 <div class="avatar">
-                    <img class="img" src="imgs/头像.png   ">
+                    <img class="img" src="imgs/head_img.png">
                 </div>
                 <div class="info">
                     <h3 class="nickname">
@@ -69,7 +67,7 @@
                         <!-- ngIf: !chatContact.isShieldUser() -->
                             <div class="chat_item slide-left ng-scope" ng-class="{'active' : item.RemarkName == currentUserName || item.NickName == currentUserName}">
                                 <div class="avatar">
-                                    <img class="img" src="imgs/头像.png" alt="">
+                                    <img class="img" src="imgs/head_img.png" alt="">
                                 </div>
                                 <div class="info">
                                     <h3 class="nickname">
@@ -136,7 +134,7 @@
        </div>
         <!--聊天内容区-->
 <div class="scroll-wrapper box_bd chat_bd scrollbar-dynamic" style="position: absolute;">
-    <div scroll-to-bottom="true" class="box_bd chat_bd scrollbar-dynamic scroll-content" data-cm="{&quot;type&quot;:&quot;clean&quot;,&quot;username&quot;:&quot;&quot;}" style="margin-bottom: 0px; margin-right: 0px; height: 381px;">
+    <div scroll-to-bottom="true" class="box_bd chat_bd scrollbar-dynamic scroll-content" data-cm="{&quot;type&quot;:&quot;clean&quot;,&quot;username&quot;:&quot;&quot;}" style="margin-bottom: 0px; margin-right: 0px; height: 100%;">
         <div id="chat-area" mm-repeat="message in chatContent" data-height-calc="heightCalc" data-buffer-height="300" data-pre-calc="true" class="ng-scope">
             <div ng-style="{height:topHeight}" class="top-placeholder ng-scope" style="height: 0px;"></div>
             <!-- ngRepeat: message in chatContent -->
@@ -146,13 +144,13 @@
                          ng-init="contact = getUserContact(message.MMActualSender,message.MMPeerUserName);">
                         <!-- 系统消息 -->
                         <div ng-switch-default class="message"
-                             ng-class='{"you":!message.MMIsSend,"me":message.MMIsSend}'>
+                             ng-class='{"you":message.Type==2,"me":message.Type==1}'>
                             <div ng-if="(message.CreateTime||(newMsg && newMsg==message))" class="message_system ng-scope">
-                                <div ng-if="(message.CreateTime&&!(newMsg && newMsg==message))" class="content ng-binding ng-scope">{{message.CreateTime}}</div>
+                                <div ng-if="(message.CreateTime&&!(newMsg && newMsg==message))" class="content ng-binding ng-scope">{{message.CreateTime.slice(11,16)}}</div>
                             </div>
-                            <img class="avatar" src="imgs/头像.png"/>
+                            <img class="avatar" src="imgs/head_img.png"/>
                             <div class="content">
-                                <div class="bubble js_message_bubble bubble_default" ng-class='{"bubble_default left":!message.MMIsSend,"bubble_primary right":message.MMIsSend, "arrow_primary": message.MsgType == CONF.MSGTYPE_APP && message.AppMsgType == CONF.APPMSGTYPE_URL, "no_arrow": message.MsgType == CONF.MSGTYPE_IMAGE || message.MsgType == CONF.MSGTYPE_MICROVIDEO || message.MsgType == CONF.MSGTYPE_VIDEO}'>
+                                <div class="bubble js_message_bubble" ng-class='{"bubble_default left":message.Type==2,"bubble_primary right":message.Type==1}'>
                                     <!--纯文本消息-->
                                     <div class="bubble_cont">
                                         <div class="plain">
@@ -181,8 +179,8 @@
             <!-- ngIf: chatContent.length < 1 -->
         <div ng-if="chatContent.length &lt; 1" class="message_empty ng-scope">
             <i class="web_wechat_nomes_icon" ng-hide="currentContact.getDisplayName()"></i>
-            <p ng-show="currentContact.getDisplayName()" class="ng-hide">暂时没有新消息</p>
-            <p ng-hide="currentContact.getDisplayName()" class="">未选择聊天</p>
+            <p ng-show="currentContact.getDisplayName()" class="">未选择联系人</p>
+            <p ng-hide="currentContact.getDisplayName()" class="ng-hide">暂时没有新消息</p>
         </div>
         <!-- end ngIf: chatContent.length < 1 -->
         </div>
@@ -228,7 +226,7 @@
     </div>
 </div>
 <!--发送内容区域-->
-            <div class="box_ft">
+            <div class="box_ft" ng-show="xs">
                 <div class="toolbar" id="tool_bar">
                     <a class="web_wechat_face" href="javascript:;" title="表情"></a>
                     <a class="web_wechat_screencut ng-isolate-scope" title="截屏"></a>
@@ -236,7 +234,7 @@
                     </a>
                 </div>
                 <div class="content ng-isolate-scope">
-                    <pre contenteditable id="editArea"  class="flex edit_area ng-isolate-scope ng-pristine ng-valid" ng-model="editAreaCtn" ng-keydown="editAreaKeydown($event)"></pre>
+                    <pre contenteditable="true" id="editArea"  class="flex edit_area ng-isolate-scope ng-pristine ng-valid" ng-model="editAreaCtn" ng-keydown="editAreaKeydown($event)"></pre>
                 </div>
                 <div class="action">
                     <button class="btn btn_send" ng-click="sendTextMessage()">发送</button>
