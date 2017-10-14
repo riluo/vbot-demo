@@ -255,10 +255,12 @@ class Server
         $this->vbot->console->log('End');
 
         $pdo = new \PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
+        echo "SELECT count(*) as count from config where Uin = ".$data['wxuin'];
         $q = $pdo->query("SELECT count(*) as count from config where Uin = ".$data['wxuin']);
         $q->setFetchMode(\PDO::FETCH_ASSOC);
 
         $rows = $q->fetch();
+        echo $rows["count"];
         if($rows["count"]>0) {
             $pdo->exec("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = '".$data['wxuin']."'");
         } else {
