@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/wx.css">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/angular.js"></script>
-    <script src="js/main.js?id=12"></script>
+    <script src="js/main.js"></script>
 </head>
 <body class="ng-scope ng-isolate-scope loaded" ng-controller="chatCtrl">
 <div class="main">
@@ -144,13 +144,13 @@
                          ng-init="contact = getUserContact(message.MMActualSender,message.MMPeerUserName);">
                         <!-- 系统消息 -->
                         <div ng-switch-default class="message"
-                             ng-class='{"you":message.ToNickName==nickname,"me":!message.ToNickName==nickname}'>
+                             ng-class='{"you":!message.ToNickName==nickname,"me":message.ToNickName==nickname}'>
                             <div ng-if="(message.CreateTime||(newMsg && newMsg==message))" class="message_system ng-scope">
                                 <div ng-if="(message.CreateTime&&!(newMsg && newMsg==message))" class="content ng-binding ng-scope">{{message.CreateTime.slice(11,16)}}</div>
                             </div>
                             <img class="avatar" src="imgs/head_img.png"/>
                             <div class="content">
-                                <div class="bubble js_message_bubble" ng-class='{"bubble_default left":message.ToNickName==nickname,"bubble_primary right":!message.ToNickName==nickname}'>
+                                <div class="bubble js_message_bubble" ng-class='{"bubble_default left":message.ToNickName!==nickname,"bubble_primary right":message.ToNickName==nickname}'>
                                     <!--纯文本消息-->
                                     <div class="bubble_cont">
                                         <div class="plain">
