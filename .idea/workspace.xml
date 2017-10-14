@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61669505" vertical-offset="1048" max-vertical-offset="1665">
-              <caret line="94" column="102" selection-start-line="94" selection-start-column="102" selection-end-line="94" selection-end-column="102" />
+            <state vertical-scroll-proportion="0.13117547" vertical-offset="1138" max-vertical-offset="1725">
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#p#0;n#!!top" expanded="true" />
               </folding>
@@ -53,7 +52,7 @@
       <file leaf-file-name="Dialog.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1725">
+            <state vertical-scroll-proportion="6.7916665" vertical-offset="1183" max-vertical-offset="1770">
               <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
               <folding>
                 <element signature="e#112#128#0#PHP" expanded="true" />
@@ -87,7 +86,7 @@
       <file leaf-file-name="serve.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1575">
+            <state vertical-scroll-proportion="-10.083333" vertical-offset="763" max-vertical-offset="1575">
               <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
               <folding>
                 <marker date="1507885018000" expanded="true" signature="2111:2241" placeholder="SELECT * fro..friends..." />
@@ -750,6 +749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2820513" vertical-offset="0" max-vertical-offset="585">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,6 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17948718" vertical-offset="0" max-vertical-offset="585">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -812,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1725">
-          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-          <folding>
-            <element signature="e#112#128#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1590">
@@ -838,19 +829,6 @@
             <marker date="1507880253000" expanded="true" signature="2452:2654" placeholder="UPDATE frien..." />
             <marker date="1507880253000" expanded="true" signature="2713:2901" placeholder="insert into ..." />
             <marker date="1507880253000" expanded="true" signature="2713:2985" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1575">
-          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-          <folding>
-            <marker date="1507885018000" expanded="true" signature="2111:2241" placeholder="SELECT * fro..friends..." />
-            <marker date="1507885018000" expanded="true" signature="2354:2527" placeholder="UPDATE frien..." />
-            <marker date="1507885018000" expanded="true" signature="2354:2556" placeholder="UPDATE frien..." />
-            <marker date="1507885018000" expanded="true" signature="2617:2889" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -882,10 +860,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/serve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.083333" vertical-offset="763" max-vertical-offset="1575">
+          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+          <folding>
+            <marker date="1507885018000" expanded="true" signature="2111:2241" placeholder="SELECT * fro..friends..." />
+            <marker date="1507885018000" expanded="true" signature="2354:2527" placeholder="UPDATE frien..." />
+            <marker date="1507885018000" expanded="true" signature="2354:2556" placeholder="UPDATE frien..." />
+            <marker date="1507885018000" expanded="true" signature="2617:2889" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.7916665" vertical-offset="1183" max-vertical-offset="1770">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+          <folding>
+            <element signature="e#112#128#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61669505" vertical-offset="1048" max-vertical-offset="1665">
-          <caret line="94" column="102" selection-start-line="94" selection-start-column="102" selection-end-line="94" selection-end-column="102" />
+        <state vertical-scroll-proportion="0.13117547" vertical-offset="1138" max-vertical-offset="1725">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#p#0;n#!!top" expanded="true" />
           </folding>
