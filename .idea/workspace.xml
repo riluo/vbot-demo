@@ -65,8 +65,8 @@
       <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="1065" max-vertical-offset="2025">
-              <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="29" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="1065" max-vertical-offset="2025">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <marker date="1508141297000" expanded="true" signature="3088:3218" placeholder="SELECT * fro..friends..." />
                 <marker date="1508141297000" expanded="true" signature="3328:3530" placeholder="UPDATE frien..." />
@@ -130,11 +130,11 @@
       <file leaf-file-name="Myself.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74358976" vertical-offset="375" max-vertical-offset="1440">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.2820513" vertical-offset="585" max-vertical-offset="1440">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding>
-                <marker date="1508142557000" expanded="true" signature="899:948" placeholder="SELECT count..." />
-                <marker date="1508142557000" expanded="true" signature="1681:1820" placeholder="UPDATE confi..." />
+                <marker date="1508142752000" expanded="true" signature="901:950" placeholder="SELECT count..." />
+                <marker date="1508142752000" expanded="true" signature="1668:1807" placeholder="UPDATE confi..." />
               </folding>
             </state>
           </provider>
@@ -568,8 +568,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="1050">
           <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
           <folding>
-            <marker date="1508142557000" expanded="true" signature="899:948" placeholder="SELECT count..." />
-            <marker date="1508142557000" expanded="true" signature="1681:1820" placeholder="UPDATE confi..." />
+            <marker date="1508142752000" expanded="true" signature="901:950" placeholder="SELECT count..." />
+            <marker date="1508142752000" expanded="true" signature="1668:1807" placeholder="UPDATE confi..." />
           </folding>
         </state>
       </provider>
@@ -951,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="1065" max-vertical-offset="2025">
-          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="29" />
+        <state vertical-scroll-proportion="-5.625" vertical-offset="1065" max-vertical-offset="2025">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <marker date="1508141297000" expanded="true" signature="3088:3218" placeholder="SELECT * fro..friends..." />
             <marker date="1508141297000" expanded="true" signature="3328:3530" placeholder="UPDATE frien..." />
@@ -963,11 +963,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74358976" vertical-offset="375" max-vertical-offset="1440">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.2820513" vertical-offset="585" max-vertical-offset="1440">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
           <folding>
-            <marker date="1508142557000" expanded="true" signature="899:948" placeholder="SELECT count..." />
-            <marker date="1508142557000" expanded="true" signature="1681:1820" placeholder="UPDATE confi..." />
+            <marker date="1508142752000" expanded="true" signature="901:950" placeholder="SELECT count..." />
+            <marker date="1508142752000" expanded="true" signature="1668:1807" placeholder="UPDATE confi..." />
           </folding>
         </state>
       </provider>
