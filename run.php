@@ -72,7 +72,23 @@ $vbot->messageHandler->setHandler(function ($message) {
 
 //[UserName] => @e7cbf8d294f878933e18062923ca1b99
 //[NickName] => 撸货买买买
+define('FILE_APPEND', 1);
+if (!function_exists("file_put_contents")) {
 
+    function file_put_contents($n, $d, $flag = false) {
+        $mode = ($flag == FILE_APPEND || strtoupper($flag) == 'FILE_APPEND') ? 'a' : 'w';
+        $f = @fopen($n, $mode);
+        if ($f === false) {
+            return 0;
+        } else {
+            if (is_array($d)) $d = implode($d);
+            $bytes_written = fwrite($f, $d);
+            fclose($f);
+            return $bytes_written;
+        }
+    }
+
+}
 // 获取监听器实例
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
