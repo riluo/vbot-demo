@@ -28,18 +28,18 @@ class Friends extends Api {
 
     public function lists() {
         $config_model = new model_config();
-        $config_config = $config_model->getORM()->order('UpdateTime DESC')->fetch();
+        $config_config = $config_model->getObject()->order('UpdateTime DESC')->fetch();
 
         $selfName = $config_config['Uin'];
         $selfNickName = $config_config['nickname'];
 
         $model = new model_friends();
 
-        $friends = $model->getORM()->where("who",$selfName)->fetchAll();
+        $friends = $model->getObject()->where("who",$selfName)->fetchAll();
 
         //取出最近的聊天信息
-        $recentChatFromFriends = $model->getORM()->select('DISTINCT FromNickName as NickName,max(CreateTime) as lastTime')->where("ToNickName",$selfNickName)->order('CreateTime DESC')->group('FromNickName')->fetchAll();
-        $recentChatToFriends = $model->getORM()->select('DISTINCT ToNickName as NickName,max(CreateTime) as lastTime')->where("FromNickName",$selfNickName)->order('CreateTime DESC')->group('ToNickName')->fetchAll();
+        $recentChatFromFriends = $model->getObject()->select('DISTINCT FromNickName as NickName,max(CreateTime) as lastTime')->where("ToNickName",$selfNickName)->order('CreateTime DESC')->group('FromNickName')->fetchAll();
+        $recentChatToFriends = $model->getObject()->select('DISTINCT ToNickName as NickName,max(CreateTime) as lastTime')->where("FromNickName",$selfNickName)->order('CreateTime DESC')->group('ToNickName')->fetchAll();
         $recentFriends = array_merge($recentChatToFriends,$recentChatFromFriends);
         foreach ($recentFriends as $key => $row) {
             $lastTime[$key]  = $row['lastTime'];
