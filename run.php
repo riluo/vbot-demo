@@ -73,22 +73,6 @@ $vbot->messageHandler->setHandler(function ($message) {
 //[UserName] => @e7cbf8d294f878933e18062923ca1b99
 //[NickName] => 撸货买买买
 
-if (!function_exists("file_put_contents")) {
-
-    function file_put_contents($n, $d, $flag = false) {
-        $mode = ($flag == FILE_APPEND || strtoupper($flag) == 'FILE_APPEND') ? 'a' : 'w';
-        $f = @fopen($n, $mode);
-        if ($f === false) {
-            return 0;
-        } else {
-            if (is_array($d)) $d = implode($d);
-            $bytes_written = fwrite($f, $d);
-            fclose($f);
-            return $bytes_written;
-        }
-    }
-
-}
 // 获取监听器实例
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
@@ -101,7 +85,12 @@ $observer->setFetchContactObserver(function(array $contacts){
            foreach($v as $vv){
                var_dump($vv);
                $data = $friends->getAvatar($vv["UserName"]);
-               file_put_content('./img/avatar.jpg', $data);
+               //file_put_content('./img/avatar.jpg', $data);
+               $fp = fopen('./img/avatar.jpg', 'wb');
+               while(($l=fread($data, 65536))) {
+                   fwrite($fp, $l);
+               }
+               fclose($fp);
                /*
                $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                $stmt->execute();
@@ -120,3 +109,4 @@ $observer->setFetchContactObserver(function(array $contacts){
 });
 // 好友实例
 $vbot->server->serve();
+
