@@ -34,12 +34,13 @@ class Friends extends Api {
         $selfNickName = $config_config['nickname'];
 
         $model = new model_friends();
+        $model_dialog =new model_dialog();
 
         $friends = $model->getObject()->where("who",$selfName)->fetchAll();
 
         //取出最近的聊天信息
-        $recentChatFromFriends = $model->getObject()->select('DISTINCT FromNickName as NickName,max(CreateTime) as lastTime')->where("ToNickName",$selfNickName)->order('CreateTime DESC')->group('FromNickName')->fetchAll();
-        $recentChatToFriends = $model->getObject()->select('DISTINCT ToNickName as NickName,max(CreateTime) as lastTime')->where("FromNickName",$selfNickName)->order('CreateTime DESC')->group('ToNickName')->fetchAll();
+        $recentChatFromFriends = $model_dialog->getObject()->select('DISTINCT FromNickName as NickName,max(CreateTime) as lastTime')->where("ToNickName",$selfNickName)->order('CreateTime DESC')->group('FromNickName')->fetchAll();
+        $recentChatToFriends = $model_dialog->getObject()->select('DISTINCT ToNickName as NickName,max(CreateTime) as lastTime')->where("FromNickName",$selfNickName)->order('CreateTime DESC')->group('ToNickName')->fetchAll();
         $recentFriends = array_merge($recentChatToFriends,$recentChatFromFriends);
         foreach ($recentFriends as $key => $row) {
             $lastTime[$key]  = $row['lastTime'];
