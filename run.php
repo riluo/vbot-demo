@@ -85,12 +85,13 @@ $observer->setFetchContactObserver(function(array $contacts){
            foreach($v as $vv){
                var_dump($vv);
                $data = $friends->getAvatar($vv["UserName"]);
+               var_dump($data);
                //file_put_content('./img/avatar.jpg', $data);
-               $fp = fopen('./img/avatar.jpg', 'wb');
+               /*$fp = fopen('./img/avatar.jpg', 'wb');
                while(($l=fread($data, 65536))) {
                    fwrite($fp, $l);
                }
-               fclose($fp);
+               fclose($fp);*/
                /*
                $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                $stmt->execute();
