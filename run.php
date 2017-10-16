@@ -81,11 +81,12 @@ $observer->setFetchContactObserver(function(array $contacts){
     //print_r($contacts['friends']);
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     foreach($contacts as $k => $v) {
+        var_dump($v);
         if($k == 'friends'){
            foreach($v as $vv){
-               var_dump($vv);
+               //var_dump($vv);
                $data = $friends->getAvatar($vv["UserName"]);
-               var_dump($data);
+               //var_dump($data);
                //file_put_content('./img/avatar.jpg', $data);
                /*$fp = fopen('./img/avatar.jpg', 'wb');
                while(($l=fread($data, 65536))) {
