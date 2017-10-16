@@ -19,6 +19,9 @@ class Friends extends Api {
             'login' => array(
                 'username' => array('name' => 'username'),
             ),
+            'search' => array(
+                'username' => array('name' => 'username','source' => 'get', 'require' => true),
+            ),
         );
     }
 
@@ -64,4 +67,19 @@ class Friends extends Api {
 
         return $sortedFriends;
     }
+
+
+    public function search() {
+        $config_model = new model_config();
+        $config_config = $config_model->getObject()->order('UpdateTime DESC')->fetch();
+
+        $selfName = $config_config['Uin'];
+
+        $model = new model_friends();
+
+        $friends = $model->getObject()->where("who",$selfName)->and('NickName LIKE ? or RemarkName LIKE ?', '%'.$this->username.'%','%'.$this->username.'%')->fetchAll();
+
+        return $friends;
+    }
+
 }
