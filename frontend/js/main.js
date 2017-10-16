@@ -1,13 +1,19 @@
 var app = angular.module("chatApp",["ng"]);
 app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function($scope,$timeout,$http,$interval){
     $scope.xs=false;
-    var date=new Date();
-    var H = date.getHours();
-    var M = date.getMinutes();
-    $http.get("http://119.29.133.42/api/public/?s=Friends.Lists").success(function(data){
-        $scope.arrList = data.data
-      console.log(data.data)
+    $http.get("http://119.29.133.42/api/public/?s=Friends.Self").success(function(data){
+      $scope.personalImage=data.data.icon;
+      $scope.PersonalName=data.data.name
     })
+  $scope.contcat=function(){
+
+  }
+  /*********************************************会话列表页数据*******************************************/
+    $http.get("http://119.29.133.42/api/public/?s=Friends.Lists").success(function(data){
+        $scope.arrList = data.data;
+        console.log($scope.arrList)
+    });
+  /**********************************************更新会话框数据******************************************/
     $scope.contentUpdate = function(){
       $interval(function(){
         $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname+"http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
@@ -27,6 +33,12 @@ app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function
           }
         })
     }
+  /**********************************搜索************************************/
+  $scope.searchName = function(searchKey){
+    $http.get("http://119.29.133.42/api/public/?s=Friends.Search&username="+searchKey).success(function(data){
+      $scope.arrList= data.data;
+    });
+  }
     $scope.goChat=function(currentUserName,nickname){
         $scope.xs=true;
         console.log(nickname)
@@ -34,7 +46,12 @@ app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function
         $scope.currentUserName=currentUserName;
         $scope.chatContent=[];
         $scope.contentUpdate();
-    }
+    };
+  /*********************************导航条************************/
+  $scope.clickChat = function(){
+
+  }
+  /**********************************发送事件*********************/
     $scope.sendTextMessage = function(){
         $timeout(function(){
             document.getElementById("editArea").innerHTML="";
@@ -59,6 +76,7 @@ app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function
         }
     }
 }]);
+/*******************************发送框***************************/
 app.directive('contenteditable', function() {
     return {
         require: 'ngModel',
