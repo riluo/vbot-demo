@@ -77,11 +77,16 @@ $vbot->messageHandler->setHandler(function ($message) {
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
     $myself = vbot('myself');
+    $friends = vbot('friends');
     //print_r($contacts['friends']);
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
            foreach($v as $vv){
+               var_dump($vv);
+               $data = $friends->getAvatar($vv["UserName"]);
+               file_put_content('./img/avatar.jpg', $data);
+               /*
                $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                $stmt->execute();
 
@@ -90,6 +95,7 @@ $observer->setFetchContactObserver(function(array $contacts){
                } else {
                    $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
                }
+               */
            }
         };
     }
