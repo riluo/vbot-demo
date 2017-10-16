@@ -72,7 +72,7 @@ $vbot->messageHandler->setHandler(function ($message) {
 
 //[UserName] => @e7cbf8d294f878933e18062923ca1b99
 //[NickName] => 撸货买买买
-define('FILE_APPEND', 1);
+
 if (!function_exists("file_put_contents")) {
 
     function file_put_contents($n, $d, $flag = false) {
