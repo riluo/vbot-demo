@@ -40,15 +40,15 @@
       <file leaf-file-name="Server.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82051283" vertical-offset="3645" max-vertical-offset="5970">
-              <caret line="275" column="327" selection-start-line="275" selection-start-column="327" selection-end-line="275" selection-end-column="327" />
+            <state vertical-scroll-proportion="0.8974359" vertical-offset="3675" max-vertical-offset="5985">
+              <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
               <folding>
-                <marker date="1508152208000" expanded="true" signature="7885:7938" placeholder="SELECT * fro..config..." />
-                <marker date="1508152208000" expanded="true" signature="7978:8031" placeholder="SELECT * fro..config..." />
-                <marker date="1508152208000" expanded="true" signature="8189:8426" placeholder="UPDATE confi..." />
-                <marker date="1508152208000" expanded="true" signature="8470:8707" placeholder="UPDATE confi..." />
-                <marker date="1508152208000" expanded="true" signature="8753:9073" placeholder="insert into ..." />
-                <marker date="1508152208000" expanded="true" signature="9117:9437" placeholder="insert into ..." />
+                <marker date="1508152404000" expanded="true" signature="7885:7938" placeholder="SELECT * fro..config..." />
+                <marker date="1508152404000" expanded="true" signature="7978:8031" placeholder="SELECT * fro..config..." />
+                <marker date="1508152404000" expanded="true" signature="8189:8426" placeholder="UPDATE confi..." />
+                <marker date="1508152404000" expanded="true" signature="8470:8707" placeholder="UPDATE confi..." />
+                <marker date="1508152404000" expanded="true" signature="8753:9074" placeholder="insert into ..." />
+                <marker date="1508152404000" expanded="true" signature="9118:9439" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -888,15 +888,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82051283" vertical-offset="3645" max-vertical-offset="5970">
-          <caret line="275" column="327" selection-start-line="275" selection-start-column="327" selection-end-line="275" selection-end-column="327" />
+        <state vertical-scroll-proportion="0.8974359" vertical-offset="3675" max-vertical-offset="5985">
+          <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
           <folding>
-            <marker date="1508152208000" expanded="true" signature="7885:7938" placeholder="SELECT * fro..config..." />
-            <marker date="1508152208000" expanded="true" signature="7978:8031" placeholder="SELECT * fro..config..." />
-            <marker date="1508152208000" expanded="true" signature="8189:8426" placeholder="UPDATE confi..." />
-            <marker date="1508152208000" expanded="true" signature="8470:8707" placeholder="UPDATE confi..." />
-            <marker date="1508152208000" expanded="true" signature="8753:9073" placeholder="insert into ..." />
-            <marker date="1508152208000" expanded="true" signature="9117:9437" placeholder="insert into ..." />
+            <marker date="1508152404000" expanded="true" signature="7885:7938" placeholder="SELECT * fro..config..." />
+            <marker date="1508152404000" expanded="true" signature="7978:8031" placeholder="SELECT * fro..config..." />
+            <marker date="1508152404000" expanded="true" signature="8189:8426" placeholder="UPDATE confi..." />
+            <marker date="1508152404000" expanded="true" signature="8470:8707" placeholder="UPDATE confi..." />
+            <marker date="1508152404000" expanded="true" signature="8753:9074" placeholder="insert into ..." />
+            <marker date="1508152404000" expanded="true" signature="9118:9439" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
