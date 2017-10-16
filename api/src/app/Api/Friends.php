@@ -86,4 +86,13 @@ class Friends extends Api {
         return $friends;
     }
 
+    public function self() {
+        $config_model = new model_config();
+        $config_config = $config_model->getObject()->order('UpdateTime DESC')->fetch();
+
+        $selfName = $config_config['Uin'];
+
+        return ['name'=>$config_config['nickname'], 'icon'=>$config_config['HeadImgUrl']];
+    }
+
 }
