@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a019d-2a33-478f-bc78-1a05b224c6c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/app/Api/Friends.php" afterPath="$PROJECT_DIR$/api/src/app/Api/Friends.php" />
     </list>
     <ignored path="vbot-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +40,7 @@
       <file leaf-file-name="Dialog.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1740">
+            <state vertical-scroll-proportion="5.625" vertical-offset="375" max-vertical-offset="1785">
               <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="95" />
               <folding>
                 <element signature="e#112#128#0#PHP" expanded="true" />
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Friends.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Friends.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/app/Api/Friends.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="825" max-vertical-offset="1410">
-              <caret line="79" column="155" selection-start-line="79" selection-start-column="155" selection-end-line="79" selection-end-column="155" />
+            <state vertical-scroll-proportion="0.8974359" vertical-offset="555" max-vertical-offset="1470">
+              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
                 <element signature="e#112#128#0#PHP" expanded="true" />
@@ -127,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Myself.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Myself.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2820513" vertical-offset="585" max-vertical-offset="1440">
-              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="585" max-vertical-offset="1440">
+              <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding>
                 <marker date="1508142752000" expanded="true" signature="901:950" placeholder="SELECT count..." />
                 <marker date="1508142752000" expanded="true" signature="1668:1807" placeholder="UPDATE confi..." />
@@ -172,10 +172,10 @@
         <option value="$PROJECT_DIR$/api/src/app/Model/Dialog.php" />
         <option value="$PROJECT_DIR$/api/src/app/Model/Friends.php" />
         <option value="$PROJECT_DIR$/api/src/app/Api/Dialog.php" />
-        <option value="$PROJECT_DIR$/api/src/app/Api/Friends.php" />
         <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Contacts.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php" />
+        <option value="$PROJECT_DIR$/api/src/app/Api/Friends.php" />
       </list>
     </option>
   </component>
@@ -369,6 +369,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -853,32 +879,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1740">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="95" />
-          <folding>
-            <element signature="e#112#128#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Card.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.12820514" vertical-offset="945" max-vertical-offset="1530">
           <caret line="63" column="69" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Friends.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="825" max-vertical-offset="1410">
-          <caret line="79" column="155" selection-start-line="79" selection-start-column="155" selection-end-line="79" selection-end-column="155" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <element signature="e#112#128#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,11 +968,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Contact/Myself.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2820513" vertical-offset="585" max-vertical-offset="1440">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+        <state vertical-scroll-proportion="-11.875" vertical-offset="585" max-vertical-offset="1440">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
             <marker date="1508142752000" expanded="true" signature="901:950" placeholder="SELECT count..." />
             <marker date="1508142752000" expanded="true" signature="1668:1807" placeholder="UPDATE confi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Dialog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.625" vertical-offset="375" max-vertical-offset="1785">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="95" />
+          <folding>
+            <element signature="e#112#128#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/app/Api/Friends.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8974359" vertical-offset="555" max-vertical-offset="1470">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#112#128#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
