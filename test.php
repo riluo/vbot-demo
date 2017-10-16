@@ -76,7 +76,8 @@ $uuid = $vbot->server->getVUuid();
 //echo $uuid;
 $url = 'https://login.weixin.qq.com/l/'.$uuid;
 $imgName = time();
-$code = new QRcode();$code::png($url, "./img/".$imgName.".png", 'H', 4, 2);
+$code = new QRcode();
+$code::png($url, "./img/".$imgName.".png", 'H', 4, 2);
 
 //先杀掉进城
 exec("ps -ef | grep serve | grep -v grep | awk '{print $2}' |xargs kill -9");

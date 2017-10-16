@@ -112,7 +112,7 @@ class Server
 
     private function cleanCookies()
     {
-        $this->vbot->console->log('cleaning useless cookies.');
+        //$this->vbot->console->log('cleaning useless cookies.');
         if (is_file($this->vbot->config['cookie_file'])) {
             unlink($this->vbot->config['cookie_file']);
         }
@@ -271,9 +271,9 @@ class Server
             $this->vbot->console->log("UPDATE config set Sid='".$data['wxsid']."',Skey='".$data['skey']."',DeviceID='".$this->vbot->config['server.deviceId']."',pass_ticket='".$data['pass_ticket']."',UpdateTime='".date("Y-m-d H:i:s",time())."' where Uin = '".$data['wxuin']."'");
 
         } else {
-            $pdo->exec("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,nickname,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+            $pdo->exec("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,HeadImgUrl,nickname,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','','','".date("Y-m-d H:i:s",time())."','','".date("Y-m-d H:i:s",time())."')");
 
-            $this->vbot->console->log("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+            $this->vbot->console->log("insert into config(Uin,Sid,Skey,DeviceID,pass_ticket,username,HeadImgUrl,nickname,CreateTime,UpdateTime) values('".$data['wxuin']."','".$data['wxsid']."','".$data['skey']."','".$this->vbot->config['server.deviceId']."','".$data['pass_ticket']."','','','','".date("Y-m-d H:i:s",time())."','','".date("Y-m-d H:i:s",time())."')");
         }
 
 
