@@ -32,10 +32,7 @@ class Dialog extends Api {
 
         $selfName = $config_config['nickname'];
 
-
-
         $model = new model_dialog();
-
 
         return $model->getObject()->where('(FromNickName = ? AND ToNickName = ?) OR (ToNickName = ? AND FromNickName = ?)', array($selfName, $this->nickname, $selfName, $this->nickname))->order('CreateTime DESC')->fetchAll();
     }

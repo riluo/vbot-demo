@@ -42,7 +42,7 @@ class Friends extends Api {
         $friends = $model->getObject()->where("who",$selfName)->fetchAll();
 
         //取出最近的聊天信息
-        $recentChatFromFriends = $model_dialog->getObject()->select('DISTINCT FromNickName as NickName,max(CreateTime) as lastTime')->where("ToNickName",$selfNickName)->group('FromNickName')->order('CreateTime DESC')->fetchAll();
+        /*$recentChatFromFriends = $model_dialog->getObject()->select('DISTINCT FromNickName as NickName,max(CreateTime) as lastTime')->where("ToNickName",$selfNickName)->group('FromNickName')->order('CreateTime DESC')->fetchAll();
         $recentChatToFriends = $model_dialog->getObject()->select('DISTINCT ToNickName as NickName,max(CreateTime) as lastTime')->where("FromNickName",$selfNickName)->group('ToNickName')->order('CreateTime DESC')->fetchAll();
         $recentFriends = array_merge($recentChatToFriends,$recentChatFromFriends);
         $lastTime = [];
@@ -67,7 +67,7 @@ class Friends extends Api {
             array_push($sortedFriends, $friends);
 
             return $sortedFriends;
-        }
+        }*/
         return $friends;
 
     }
