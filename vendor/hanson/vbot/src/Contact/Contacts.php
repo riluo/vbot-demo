@@ -124,7 +124,7 @@ class Contacts extends Collection
 
         $api = $this->vbot->groups->isGroup($username) ? '/webwxgetheadimg' : '/webwxgeticon';
 
-        echo $this->vbot->config['server.uri.base'];
+        //echo $this->vbot->config['server.uri.base'];
 
         return $this->vbot->http->get($this->vbot->config['server.uri.base'].$api, ['query' => $params]);
     }
