@@ -30,6 +30,7 @@ class Myself
 
     private function log()
     {
+        $myself = vbot('myself');
         vbot('console')->log('current user\'s nickname:'.$this->nickname);
         vbot('console')->log('current user\'s username:'.$this->username);
         vbot('console')->log('current user\'s uin:'.$this->uin);
@@ -38,9 +39,24 @@ class Myself
         $q = $pdo->query("SELECT count(*) as count from config where Uin = ".$this->uin);
         $q->setFetchMode(\PDO::FETCH_ASSOC);
 
+        $data = $myself->getAvatar($this->username);
+        $headImageUrl = "http://119.29.133.42/img/avatar/".$myself->uin.'/'.md5($this->nickname).'.jpg';
+
+        $avatar_dir = './img/avatar/'.$myself->uin;
+        $avatar_file = './img/avatar/'.$myself->uin.'/'.md5($this->nickname).'.jpg';
+        if(!is_dir($avatar_dir)) {
+            mkdir($avatar_dir,0775);
+        }
+
+        if(!file_exists($avatar_file)){
+            $fp = fopen('./img/avatar/'.$myself->uin.'/'.md5($this->nickname).'.jpg', 'wb');
+            fwrite($fp, $data);
+            fclose($fp);
+        }
+        
         $rows = $q->fetch();
         if($rows["count"]>0) {
-            $pdo->exec("UPDATE config set username='".$this->username."',nickname='".$this->nickname."' where Uin = '".$this->uin."'");
+            $pdo->exec("UPDATE config set username='".$this->username."',nickname='".$this->nickname."',HeadImgUrl='".$headImageUrl."' where Uin = '".$this->uin."'");
         }
     }
 
