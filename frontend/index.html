@@ -68,7 +68,7 @@
 
                     <div class="ng-scope" id="content" style="width: 100%;">
                         <!-- end ngRepeat: chatContact in chatList track by chatContact.UserName -->
-                        <div class=" ng-scope" ng-repeat="item in arrList" ng-click="goChat(item.UserName,item.NickName)" >
+                        <div class=" ng-scope" ng-repeat="item in arrList" ng-click="goChat(item.UserName,item.NickName,item.RemarkName==""?item.item.NickName:item.RemarkName)" >
                         <!-- ngIf: !chatContact.isShieldUser() -->
                             <div class="chat_item slide-left ng-scope" ng-class="{'active' : item.RemarkName == currentUserName || item.NickName == currentUserName}">
                                 <div class="avatar">

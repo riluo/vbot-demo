@@ -37,9 +37,9 @@ app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function
       $scope.arrList= data.data;
     });
   }
-    $scope.goChat=function(currentUserName,nickname){
+    $scope.goChat=function(currentUserName,nickname,rnickname){
+      $scope.rnickname=rnickname
         $scope.xs=true;
-        console.log(nickname)
         $scope.nickname=nickname;
         $scope.currentUserName=currentUserName;
         $scope.chatContent=[];
