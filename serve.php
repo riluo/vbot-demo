@@ -82,7 +82,7 @@ $observer->setFetchContactObserver(function(array $contacts){
                 $stmt->execute();
 
                 if($stmt->rowCount()>0) {
-                    $pdo->exec("UPDATE friends set UserName='".$vv["UserName"]."',UpdateTime='".date("Y-m-d H:i:s",time())."' where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
+                    $pdo->exec("UPDATE friends set UserName='".$vv["UserName"]."',UpdateTime='".date("Y-m-d H:i:s",time())."',HeadImgUrl='".$vv["HeadImgUrl"]."' where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                 } else {
                     $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
                 }
