@@ -65,6 +65,7 @@ $options = [
 ];
 $vbot = new Hanson\Vbot\Foundation\Vbot($options);
 $vbot->messageHandler->setHandler(function ($message) {
+    //var_dump($message);
     //Hanson\Vbot\Message\Text::send($message['from']['UserName'], 'testing...!');
     //var_dump($message['raw']);
     Hanson\Vbot\Message\Text::saveLog($message['from']['UserName'], $message['from']['NickName'], $message['raw']['Content']);
@@ -88,11 +89,9 @@ $observer->setFetchContactObserver(function(array $contacts){
                $data = $friends->getAvatar($vv["UserName"]);
                //var_dump($data);
                //file_put_content('./img/avatar.jpg', $data);
-               /*$fp = fopen('./img/avatar.jpg', 'wb');
-               while(($l=fread($data, 65536))) {
-                   fwrite($fp, $l);
-               }
-               fclose($fp);*/
+               $fp = fopen('./img/avatar.jpg', 'wb');
+               fwrite($fp, $data);
+               fclose($fp);
                /*
                $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                $stmt->execute();
