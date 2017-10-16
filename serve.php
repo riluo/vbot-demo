@@ -73,18 +73,37 @@ $vbot->messageHandler->setHandler(function ($message) {
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
     $myself = vbot('myself');
+    $friends = vbot('friends');
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     //print_r($contacts['friends']);
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
             foreach($v as $vv){
+                $data = $friends->getAvatar($vv["UserName"]);
+                //var_dump($data);
+                //file_put_content('./img/avatar.jpg', $data);
+                $headImageUrl = "http://119.29.133.42/img/avatar/".$myself->uin.'/'.md5($vv['NickName']).'.jpg';
+
+                $avatar_dir = './img/avatar/'.$myself->uin;
+                $avatar_file = './img/avatar/'.$myself->uin.'/'.md5($vv['NickName']).'.jpg';
+                if(!is_dir($avatar_dir)) {
+                    mkdir($avatar_dir,0775);
+                }
+
+
+                if(!file_exists($avatar_file)){
+                    $fp = fopen('./img/avatar/'.$myself->uin.'/'.md5($vv['NickName']).'.jpg', 'wb');
+                    fwrite($fp, $data);
+                    fclose($fp);
+                }
+
                 $stmt=$pdo->prepare("SELECT * from friends where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                 $stmt->execute();
 
                 if($stmt->rowCount()>0) {
                     $pdo->exec("UPDATE friends set UserName='".$vv["UserName"]."',UpdateTime='".date("Y-m-d H:i:s",time())."',HeadImgUrl='".$vv["HeadImgUrl"]."' where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                 } else {
-                    $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$vv['HeadImgUrl']."','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+                    $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$headImageUrl."','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
                 }
             }
         };
