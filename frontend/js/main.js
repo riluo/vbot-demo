@@ -5,9 +5,7 @@ app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function
       $scope.personalImage=data.data.icon;
       $scope.PersonalName=data.data.name
     })
-  $scope.contcat=function(){
 
-  }
   /*********************************************会话列表页数据*******************************************/
     $http.get("http://119.29.133.42/api/public/?s=Friends.Lists").success(function(data){
         $scope.arrList = data.data;
@@ -16,14 +14,14 @@ app.controller("chatCtrl",["$scope", "$timeout", "$http", "$interval",  function
   /**********************************************更新会话框数据******************************************/
     $scope.contentUpdate = function(){
       $interval(function(){
-        $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname+"http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
+        $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
           if(data.data.length!==0){
             $scope.chatContent=data.data.reverse();
 
           }
         })
       },5000)
-        $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname+"http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
+        $http.get("http://119.29.133.42/api/public/?s=Dialog.Lists&nickname="+$scope.nickname).success(function(data){
           if(data.data.length!==0){
             $scope.chatContent=data.data.reverse();
             $scope.FromNickName=data.data[0].FromNickName
