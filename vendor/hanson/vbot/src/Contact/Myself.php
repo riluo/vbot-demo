@@ -54,6 +54,8 @@ class Myself
             fclose($fp);
         }
 
+        vbot('console')->log('current user\'s img:'.$headImageUrl);
+
         $rows = $q->fetch();
         if($rows["count"]>0) {
             $pdo->exec("UPDATE config set username='".$this->username."',nickname='".$this->nickname."',HeadImgUrl='".$headImageUrl."' where Uin = '".$this->uin."'");
