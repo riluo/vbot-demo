@@ -119,7 +119,7 @@ class Contacts extends Collection
     {
         $params = [
             'userName' => $username,
-            'type'     => 'big',
+            'type'     => 'small',
         ];
 
         $api = $this->vbot->groups->isGroup($username) ? '/webwxgetheadimg' : '/webwxgeticon';
