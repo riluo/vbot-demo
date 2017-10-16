@@ -82,7 +82,7 @@ $observer->setFetchContactObserver(function(array $contacts){
     //print_r($contacts['friends']);
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     foreach($contacts as $k => $v) {
-        var_dump($v);
+        //var_dump($v);
         if($k == 'friends'){
            foreach($v as $vv){
                //var_dump($vv);
