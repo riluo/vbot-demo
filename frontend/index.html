@@ -6,7 +6,7 @@
     <title>微信网页版</title>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/angular.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?time=New Date()"></script>
     <link rel="stylesheet" href="css/wx.css">
   <style>
     #mainBox{position:relative; overflow:hidden;}
@@ -68,7 +68,7 @@
 
                     <div class="ng-scope" id="content" style="width: 100%;">
                         <!-- end ngRepeat: chatContact in chatList track by chatContact.UserName -->
-                        <div class=" ng-scope" ng-repeat="item in arrList" ng-click="goChat(item.UserName,item.RemarkName!==''?item.RemarkName:item.NickName)" >
+                        <div class=" ng-scope" ng-repeat="item in arrList" ng-click="goChat(item.UserName,item.NickName,item.RemarkName!==''?item.RemarkName:item.NickName)" >
                         <!-- ngIf: !chatContact.isShieldUser() -->
                             <div class="chat_item slide-left ng-scope" ng-class="{'active' : item.RemarkName == currentUserName || item.NickName == currentUserName}">
                                 <div class="avatar">
@@ -93,7 +93,7 @@
           <div id="chatRoomMembersWrap"></div>
               <div class="title_wrap">
                   <div class="title poi">
-                        <a class="title_name ng-binding">{{nickname}}</a>
+                        <a class="title_name ng-binding">{{rnickname}}</a>
                   </div>
               </div>
        </div>
