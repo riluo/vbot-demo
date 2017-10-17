@@ -69,12 +69,13 @@
       <file leaf-file-name="serve.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82051283" vertical-offset="1200" max-vertical-offset="1950">
-              <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.82051283" vertical-offset="1200" max-vertical-offset="1995">
+              <caret line="106" column="196" selection-start-line="106" selection-start-column="196" selection-end-line="106" selection-end-column="196" />
               <folding>
-                <marker date="1508205142000" expanded="true" signature="2921:3051" placeholder="SELECT * fro..friends..." />
-                <marker date="1508205142000" expanded="true" signature="3164:3366" placeholder="UPDATE frien..." />
-                <marker date="1508205142000" expanded="true" signature="3427:3695" placeholder="insert into ..." />
+                <marker date="1508205388000" expanded="true" signature="2923:3053" placeholder="SELECT * fro..friends..." />
+                <marker date="1508205388000" expanded="true" signature="3166:3368" placeholder="UPDATE frien..." />
+                <marker date="1508205388000" expanded="true" signature="3431:3699" placeholder="insert into ..." />
+                <marker date="1508205388000" expanded="true" signature="3735:3986" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -916,12 +917,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82051283" vertical-offset="1200" max-vertical-offset="1950">
-          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.82051283" vertical-offset="1200" max-vertical-offset="1995">
+          <caret line="106" column="196" selection-start-line="106" selection-start-column="196" selection-end-line="106" selection-end-column="196" />
           <folding>
-            <marker date="1508205142000" expanded="true" signature="2921:3051" placeholder="SELECT * fro..friends..." />
-            <marker date="1508205142000" expanded="true" signature="3164:3366" placeholder="UPDATE frien..." />
-            <marker date="1508205142000" expanded="true" signature="3427:3695" placeholder="insert into ..." />
+            <marker date="1508205388000" expanded="true" signature="2923:3053" placeholder="SELECT * fro..friends..." />
+            <marker date="1508205388000" expanded="true" signature="3166:3368" placeholder="UPDATE frien..." />
+            <marker date="1508205388000" expanded="true" signature="3431:3699" placeholder="insert into ..." />
+            <marker date="1508205388000" expanded="true" signature="3735:3986" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
