@@ -79,7 +79,7 @@ $observer->setFetchContactObserver(function(array $contacts){
     foreach($contacts as $k => $v) {
         if($k == 'friends'){
             foreach($v as $vv){
-                $data = $friends->getAvatar($vv["UserName"]);
+                /*$data = $friends->getAvatar($vv["UserName"]);
                 //var_dump($data);
                 //file_put_content('./img/avatar.jpg', $data);
                 $headImageUrl = "http://119.29.133.42/img/avatar/".$myself->uin.'/'.md5($vv['NickName']).'.jpg';
@@ -105,7 +105,7 @@ $observer->setFetchContactObserver(function(array $contacts){
                 } else {
                     $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$headImageUrl."','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
                     //$vv['HeadImgUrl']
-                }
+                }*/
             }
         };
     }
