@@ -73,6 +73,7 @@ $vbot->messageHandler->setHandler(function ($message) {
 $observer = $vbot->observer;
 $observer->setFetchContactObserver(function(array $contacts){
     $myself = vbot('myself');
+    echo 'friends';
     $friends = vbot('friends');
     $pdo = new PDO("mysql:host=localhost;dbname=sd_chat","root","Sunland16");
     //print_r($contacts['friends']);
@@ -104,7 +105,7 @@ $observer->setFetchContactObserver(function(array $contacts){
                     $pdo->exec("UPDATE friends set UserName='".$vv["UserName"]."',UpdateTime='".date("Y-m-d H:i:s",time())."' where NickName = '".$vv['NickName']."' and RemarkName = '".$vv['RemarkName']."' and who = '".$myself->uin."'");
                 } else {
                     //$pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','".$headImageUrl."','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
-                    $pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
+                    //$pdo->exec("insert into friends(UserName,NickName,RemarkName,HeadImgUrl,who, CreateTime,UpdateTime) values('".$vv["UserName"]."','".$vv['NickName']."','".$vv['RemarkName']."','','".$myself->uin."','".date("Y-m-d H:i:s",time())."','".date("Y-m-d H:i:s",time())."')");
                     //$vv['HeadImgUrl']
                 }
             }
